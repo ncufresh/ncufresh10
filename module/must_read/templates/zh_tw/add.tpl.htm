@@ -1,0 +1,14 @@
+<{if $currmodule->is_system() == TRUE}>
+<form name="data" action="save.php" method="post">
+    類別：
+    <select name="select">
+      <option value="0">請選擇</option>
+      <option value="1">大一新生</option>
+      <option value="2">大一復學</option>
+      <option value="3">大一相關須知</option>
+    </select><br>
+    標題： <input name="title" type="text"><br>
+   內容：<{$editor}>
+  <input type="submit" value="確定發送">
+</form>
+<{/if}>

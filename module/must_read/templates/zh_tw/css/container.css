@@ -1,0 +1,176 @@
+a:link{
+	text-decoration:none;
+}
+#link{
+	margin-top:38px;
+	font-size:10px;
+	border:0px;
+	height:42px;
+}
+#select{
+	margin-top:38px;
+	font-size:10px;
+	border:0px;
+	height:60px;
+}
+#main_1{
+	height:28px;
+}
+#main_2{
+	height:26px;
+}
+#main_3{
+	height:31px;
+	margin-top:4px;
+}
+#main_4{
+	height:30px;
+}
+.L1{padding-left:20px;}
+.L2{padding-left:20px;}
+.L3{padding-left:20px;}
+.L4{padding-left:20px;}
+.R1{padding-left:20px;}
+.R2{padding-left:20px;}
+.R3{padding-left:20px;}
+.R4{padding-left:20px;}
+#top1{
+	background-image:url(../images/new_up.png);
+	background-repeat:no-repeat;
+}
+#top2{
+	background-image:url(../images/return_up.png);
+	background-repeat:no-repeat;
+}
+#top3{
+	background-image:url(../images/related_up.png);
+	background-repeat:no-repeat;
+}
+#top4{
+	background-image:url(../images/download_up.png);
+	background-repeat:no-repeat;
+}
+#mid1{
+	background-image:url(../images/new_between.png);
+	background-repeat:repeat-y;
+	margin-left:0px;
+}
+#mid2{
+	background-image:url(../images/return_between.png);
+	background-repeat:repeat-y;
+	margin-left:0px;
+}
+#mid3{
+	background-image:url(../images/related_between.png);
+	background-repeat:repeat-y;
+	margin-left:0px;
+}
+#m1{
+	background-image:url(../images/new_bottom.png);
+	background-repeat:no-repeat;
+	margin-left:0px;
+	height:450px;
+}
+#m2{
+	background-image:url(../images/return_bottom.png);
+	background-repeat:no-repeat;
+	margin-left:0px;
+	height:450px;
+}
+#m3{
+	background-image:url(../images/related_bottom.png);
+	background-repeat:no-repeat;
+	margin-left:0px;
+	height:490px;
+}
+#m4{
+	background-image:url(../images/download_bottom.png);
+	background-repeat:no-repeat;
+	margin-left:0px;
+	height:490px;
+}
+#mid_c{
+	margin-left:25px;
+	margin-right:50px;
+}
+#bottom1{
+	background-image:url(../images/new_down.png);
+	background-repeat:no-repeat;
+}
+#bottom2{
+	background-image:url(../images/return_down.png);
+	background-repeat:no-repeat;
+}
+#bottom3{
+	background-image:url(../images/related_down.png);
+	background-repeat:no-repeat;
+}
+.Bleft{
+	margin-left:25px;
+	float:left;
+	width:285px;
+}
+.Bright{
+	margin-left:340px;
+	width:300px;
+}
+#main_1:hover{
+
+}
+#main_2:hover{
+
+}
+#main_3:hover{
+
+}
+#main_4:hover{
+
+}
+a.L1:hover{
+	background-image:url(../images/new_orange.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+	text-decoration:none;
+}
+a.L2:hover{
+	background-image:url(../images/return_green.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+	text-decoration:none;
+}
+a.L3:hover{
+	background-image:url(../images/related_blue.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+	text-decoration:none;
+}
+a.L4:hover{
+	background-image:url(../images/download_purple.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+	text-decoration:none;
+}
+a.R1:hover{
+	background-image:url(../images/new_orange.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+	text-decoration:none;
+}
+a.R2:hover{
+	background-image:url(../images/return_green.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+	text-decoration:none;
+}
+a.R3:hover{
+	background-image:url(../images/related_blue.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+	text-decoration:none;
+}
+a.R4:hover{
+	background-image:url(../images/download_purple.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+	text-decoration:none;
+}

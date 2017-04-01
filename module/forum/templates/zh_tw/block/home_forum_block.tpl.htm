@@ -1,0 +1,16 @@
+<div id="forum_main_block">
+  <div id="forum_title_block">
+  <a title="檢視所有公告" href="<{$currcfg.URL_ROOT_PATH}>/module/forum">more...</a>
+  </div>
+  
+  <{foreach from=$block_var.forum_array item=forum_item}>
+  <div class="forum_item_block">
+    <span class="forum_item_title"><a class="forum_link" title="<{$forum_item.title}>" href="<{$currcfg.URL_ROOT_PATH}>/module/forum/forum_problem.php?gid=<{$forum_item.gid}>&cid=<{$forum_item.catid}>&page=1"></a></span>
+	<span class="forum_item_info_title">
+		<a href="<{$currcfg.URL_ROOT_PATH}>/module/forum/forum_problem.php?gid=<{$forum_item.gid}>&cid=<{$forum_item.catid}>&page=1"><{if $forum_item.catid==1 || $forum_item.parent==3}>[<{$forum_item.category}>]<{/if}><{$forum_item.title}></a>
+	</span>
+	<span class="forum_item_info_author"><{$forum_item.nickname}></span>
+  </div>
+  <{/foreach}>
+  <br class="clear" />
+</div>

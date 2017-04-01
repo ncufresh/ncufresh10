@@ -1,0 +1,136 @@
+<{if $is_new}>
+<!--先分到new-q-body		<div class="question onEdit">
+
+			<table><tbody>
+			<tr>
+				<th>問題標題</th>
+				<td><input type="text" name="q_title" value="<{$q_title}>" /></td>
+			</tr>
+			<tr>
+				<th>問題說明</th>
+				<td><input type="text" name="q_desc" value="<{$q_desc}>"/></td>
+			</tr>
+			<tr>
+				<th>答案類型</th>
+				<td>
+					<select>
+						<option selected="selected">文字</option>
+						<option>段落</option>
+						<option>單選</option>
+						<option>勾選</option>
+						<option>清單</option>
+					</select>
+				</td>
+			</tr>
+			</tbody></table>
+			
+			<div class="response">
+				<input type="hidden" value="0" name="res_type" class="res_type" />
+				
+				<div class="text">
+					<input type="text" value="their answer" disabled="disabled" />
+				</div>
+			</div>
+			
+<!--先用javascript實作			<div class="response">
+				<input type="hidden" value="0" name="res_type[]" class="res_type" />
+				
+				<div class="text default">
+					<input type="text" value="their answer" disabled="disabled" />
+				</div>
+				
+				<div class="paragragh">
+					<input type="text" value="their longer answer" disabled="disabled" />
+				</div>
+				
+				<div class="multiple-choice">
+				<ul>
+					<li><input type="radio" /><input type="text" value="option" name="op"/></li>
+					<li><input type="radio" disabled="disabled" /><input type="text"  disabled="disabled"/></li>
+				</ul>
+				</div>
+				
+				<div class="checkbox">
+				<ul>
+					<li><input type="checkbox" /><input type="text" value="option" name="op"/></li>
+					<li disabled="disabled"><input type="checkbox"  /><input type="text" /></li>
+				</ul>
+				</div>
+				
+				<div class="list">
+				<ul>
+					<li><input type="text" value="option" name="op"/></li>
+					<li disabled="disabled"><input type="text" /></li>
+				</ul>
+				</div>
+				
+			</div>    -->
+			
+<!--分到new-q-body			<div class="send">
+				<button class="done" type="button" >Done</button>
+				<span><input type="checkbox" name="required[]" />required </span>
+			</div>
+		</div>
+-->
+
+<{else}>
+	<!--把題目跟選項印出來-->
+	<ol>
+	<{section name=i loop=$questions}>
+	<li><div class="question onShow">
+			<div class="editTool"><span class="delQues"><img src="templates/zh_tw/images/X.png" title="刪除問題"/></span><span class="editQues"><img src="templates/zh_tw/images/pen.png" title="編輯問題"/></span></div>
+			<input type="hidden" name="tid" value="<{$questions[i].tid}>" />
+			<label class="q_title_label"><input type="hidden" name="q_title" value="<{$questions[i].t_title}>" /><{$questions[i].t_title}></label>
+			<{if $questions[i].required=="1"}>
+				<input type="hidden" name="required" value="1" />
+				<label class="redstar">*</label>	
+			<{else}>
+				<input type="hidden" name="required" value="0" />
+			<{/if}>
+			<label class="q_desc_label"><input type="hidden" name="q_desc" value="<{$questions[i].t_description}>" /><{$questions[i].t_description}></label>			
+			<div class="response">
+			<{if $questions[i].t_type == "0"}>
+				<input type="hidden" name="res_type" value="0" />
+				<input type="text" />
+
+			<{elseif $questions[i].t_type == "1"}>
+				<input type="hidden" name="res_type" value="1" />
+				<textarea></textarea>
+			<{elseif $questions[i].t_type == "2"}>
+				<input type="hidden" name="res_type" value="2" />
+				<ul>
+				<{section name=j loop=$questions[i].options}>
+					<li><input type="radio" name="question<{$questions[i].tid}>"/><input type="hidden" name="oid[]" value="<{$questions[i].options[j].oid}>" /><input type="hidden" name="opt[]" value="<{$questions[i].options[j].option}>"/><label><{$questions[i].options[j].option}></label></li>
+				<{/section}>
+				<{if $questions[i].o_other=="1"}>
+					<li class="addOther"><input type="radio" name="question<{$questions[i].tid}>"/><input type="hidden" name="addOther" value="1" />其他:<input type="text"/></li>
+				<{/if}>
+				</ul>
+			<{elseif $questions[i].t_type == "3"}>
+				<input type="hidden" name="res_type" value="3" />
+				<ul>
+				<{section name=j loop=$questions[i].options}>
+					<li><input type="checkbox"/><input type="hidden" name="oid[]" value="<{$questions[i].options[j].oid}>" /><input type="hidden" name="opt[]" value="<{$questions[i].options[j].option}>"/><label><{$questions[i].options[j].option}></label></li>
+				<{/section}>
+				<{if $questions[i].o_other=="1"}>
+					<li class="addOther"><input type="checkbox" name="question<{$questions[i].tid}>"/><input type="hidden" name="addOther" value="1" />其他:<input type="text"/></li>
+				<{/if}>
+				</ul>
+			<{elseif $questions[i].t_type == "4"}>
+				<input type="hidden" name="res_type" value="4" />
+				<{section name=j loop=$questions[i].options}>
+					<input type="hidden" name="oid[]" value="<{$questions[i].options[j].oid}>" />
+					<input type="hidden" name="opt[]" value="<{$questions[i].options[j].option}>"/>
+				<{/section}>
+				<select>
+				<{section name=j loop=$questions[i].options}>
+					<option><{$questions[i].options[j].option}></option>
+				<{/section}>
+				</select>
+			<{/if}>
+			</div>
+		</div></li>
+	<{/section}>
+	</ol>
+<{/if}>		
+		

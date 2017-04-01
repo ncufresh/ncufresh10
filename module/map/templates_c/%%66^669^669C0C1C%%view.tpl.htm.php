@@ -1,0 +1,50 @@
+<?php /* Smarty version 2.6.26, created on 2010-08-06 07:29:26
+         compiled from zh_tw/view.tpl.htm */ ?>
+<div id="mapview" class="map">
+<a href="view_nojs_loadcontent.php?key=9&samname=a0" id="view1" class="sprite" onClick="showbox();view_showsmp('a0');showcontent(9);return false;"></a>
+
+<a href="view_nojs_loadcontent.php?key=8&samname=b0" id="view2" class="sprite" onClick="showbox();showcontent(8);view_showsmp('b0');return false;"></a>
+
+<a href="view_nojs_loadcontent.php?key=4&samname=j0" id="view11" class="sprite" onClick="showbox();showcontent(4);view_showsmp('j0');return false;"></a>
+
+<a href="view_nojs_loadcontent.php?key=5&samname=c0" id="view3" class="sprite" onClick="showbox();showcontent(5);view_showsmp('c0');return false;"></a>
+
+<a href="view_nojs_loadcontent.php?key=6&samname=d0" id="view4" class="sprite" onClick="showbox();showcontent(6);view_showsmp('d0');return false;"></a>
+
+<a href="view_nojs_loadcontent.php?key=20&samname=e0" id="view5" class="sprite" onmouseover="chatogether();" onmouseout="recover();" onClick="showbox();showcontent(20);view_showsmp('e0');return false;"></a>
+
+<a href="view_nojs_loadcontent.php?key=20&samname=f0" id="view6" class="sprite" onmouseover="chatogether();" onmouseout="recover();" onClick="showbox();showcontent(20);view_showsmp('f0');return false;"></a>
+
+<a href="view_nojs_loadcontent.php?key=20&samname=g0" id="view8" class="sprite" onmouseover="chatogether();" onmouseout="recover();" onClick="showbox();showcontent(20);view_showsmp('g0');return false;"></a>
+
+<a href="view_nojs_loadcontent.php?key=7&samname=h0" id="view9" class="sprite" onClick="showbox();showcontent(7);view_showsmp('h0');return false;"></a>
+
+<a href="view_nojs_loadcontent.php?key=37&samname=i0" id="view10" class="sprite" onClick="showbox();showcontent(37);view_showsmp('i0');return false;"></a>
+
+<a href="view_nojs_loadcontent.php?key=35&samname=k0" id="view12" class="sprite" onClick="showbox();showcontent(35);view_showsmp('k0');return false;"></a>
+
+<a href="view_nojs_loadcontent.php?key=3&samname=m0" id="view13" class="sprite" onClick="showbox();showcontent(3);view_showsmp('m0');return false;"></a>
+
+<a href="view_nojs_loadcontent.php?key=32&samname=pine2" id="view14" class="sprite" onClick="showbox();showcontent(32);view_showsmp('pine2');return false;"></a>
+
+<a href="view_nojs_loadcontent.php?key=36&samname=c0" id="view7" class="sprite" onClick="showbox();showcontent(36);view_showsmp('c2');return false;"></a>
+
+<div id="box" class="panel">
+        <div id="box_top">
+        
+        
+        </div>
+        <div id="box_center">
+        <a onClick="hidebox();return false;"><img id="pho_box_close" style="float:right;" src="templates/zh_tw/images/close.png"></a>
+        <span id="sample"></span>
+       	<div id="table" align="center" style="position:relative;">
+        
+        </div>
+        <br/><br/><br/>
+        <div id="content"></div>
+ 		
+        
+        </div>
+        <div id="box_bottom"></div>
+</div>
+</div>

@@ -1,0 +1,16 @@
+<div>
+	<div id="film_list">
+		<div id="film_list_left"></div>
+		<div id="film_queue">
+			<{section name=i loop=$img_src_2D}>
+				<a href="index.php?film=<{$img_src_2D[i].film_index}>"><span class="film"><img src="<{$img_src_2D[i].img_src}>" /></span></a>
+			<{/section}>
+		</div>
+		<div id="film_list_right"></div>
+	</div>
+	<div id="film_show_bg">
+		<div id="film_title"><{$film_title}></div>
+		<div id="film_show"><{$film_src}></div>
+		<div id="description"><{$desc}></div>
+	</div>
+</div>

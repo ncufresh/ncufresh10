@@ -1,0 +1,24 @@
+       <div class="m_up">
+		<{if $much!=0}>	
+		  <a href="unreadmail.php"><img alt="未讀訊息" src="templates/zh_tw/images/mailbox/nnnotreadn.png"/></a>
+	    <div class="in_frog"><{$much}></div>
+          <{else}>
+	        <a href="unreadmail.php"><img alt="未讀訊息" src="templates/zh_tw/images/mailbox/nnnotread.png"/></a>
+	        <{/if}>
+	        <a href="haveread.php"><img alt="已讀訊息" src="templates/zh_tw/images/mailbox/nnread.png"/></a>
+	        <a href="sendmail.php"><img alt="寄送訊息" src="templates/zh_tw/images/mailbox/nnsend.png"/></a>
+      </div>
+ 
+      	<div class="m_back">
+		  <div class="mail_show">
+			<div class="m_c_sub">寄件者：</div><div class="m_c_con"><{$contents.username}></div><br/>
+			<div class="m_c_sub">標題：</div><div class="m_c_con"><{$contents.subject}></div><br/>
+			<div class="m_c_sub">內容：</div><div class="m_c_con"><{$contents.contents}></div><br/>
+			<{if $where=="haveread"}>
+			<div class="m_down"><div class="m_c_back"><a href="sendmail.php?what=<{$contents.username}>"><img src="templates/zh_tw/images/mailbox/retowr.png"><a/></div><div class="m_c_back"><a href="haveread.php"><img src="templates/zh_tw/images/mailbox/backlast.png"><a/></div></div>
+			<{else $where=="unread"}>
+			<div class="m_down"><div class="m_c_back"><a href="sendmail.php?what=<{$contents.username}>"><img src="templates/zh_tw/images/mailbox/retowr.png"><a/></div><div class="m_c_back"><a href="unreadmail.php"><img src="templates/zh_tw/images/mailbox/backlast.png"><a/></div></div>
+			<{/if}>
+		  </div>
+		<br class="clear"/>
+		</div>

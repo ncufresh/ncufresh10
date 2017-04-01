@@ -1,0 +1,379 @@
+#event_list{
+	float: right;	margin: 68px 21px 0px 0px!important;	margin:70px 11px 0px 0px
+}
+#nike{
+	float:left;}
+#event_date{
+	float:left;}
+.event_title{
+	float:left;}
+#backgr{
+	float: left;	width: 175px;	height: 464px;
+	background-image:url(images/calender_news_BG.png);
+	margin: 0px 0px 0px 0px;
+}
+
+#new_thing{
+	width:56px;		height:13px;	margin-left:21px;
+	background:url(images/calender_news_title.png)	no-repeat;
+}
+
+#list_no_up_and_down{
+	height: 172px;	width: 111px;	overflow: hidden; font-size:14px;	margin-top:0px!important;	margin-top:-10px; 
+}
+#up{
+	background: url(images/calender_news_up_2.png)	no-repeat;
+	width:64px;		height:12px;	margin-top:5px!important;	margin-top:0px;		margin-left:42px;
+}
+
+#up:hover{
+	background: url(images/calender_news_up.png) no-repeat;
+	width:64px;		height:12px;}
+
+#down{
+	background:url(images/calender_news_down_2.png);	background-repeat:no-repeat;
+	width:64px;		height:12px;	margin-top:7px;		margin-left:42px;
+}
+#down:hover{
+	background:url(images/calender_news_down.png);	background-repeat:no-repeat;
+	width:64px;		height:12px;}
+
+
+#dan{	
+	color: #ff0000;
+}
+#normal{
+	color:#333333;
+}
+#safe{
+	color:#66CC66;
+}
+#over{
+color:#990000;
+}
+
+#date{
+	margin:120px 0px 0px 17px;	*margin:127px 0px 0px 14px!important;	*margin:118px 0px 0px 17px;		color:#FFFFFF;	font-weight:600; 
+}
+
+/*--------------------------------------------*/
+
+#sky_back{
+	background:url(images/calender_BACKGROUND_2.jpg);
+	width:747px;
+	min-height:840px;
+}
+#calender_index
+{
+	background:url(images/calender_bottom.png);
+	width:580px;
+	height:608px;
+	margin-left:-10px;
+	float: left;
+}
+#add{
+}
+
+#date_list_8{
+	background:url(images/8bg.png);
+	width:511px;
+	height:487px;
+	margin-top:70px;
+	margin-left:30px;
+	position:absolute;
+	background-repeat:no-repeat;
+}
+
+#date_list_9{
+	background:url(images/9bg.png);
+	width:511px;
+	height:487px;
+	margin-top:70px;
+	margin-left:30px;
+	position:absolute;
+	background-repeat:no-repeat;
+}
+
+#calender_word{
+	background:url(images/calender_calenderword.png);
+	width:96px;
+	height:40px;
+	margin-top:495px;
+	position:absolute;
+}
+
+#month_8{
+	background:url(images/calender_calenderword8.png);
+	width:132px;	height:38px;
+	position:absolute;
+	margin-top:495px;
+	margin-left:155px;
+}
+
+#month_9{
+	background:url(images/calender_calenderword9.png);
+	width:186px;	height:38px;
+	position:absolute;
+	margin-top:495px;	margin-left:300px;
+}
+
+#month_to_9{
+	background:url(images/calender_calender_next_9.png);
+	width:77px;		height:28px;
+	position:absolute;
+	margin-top:495px;
+	margin-left:395px;
+}
+#month_to_9:hover{
+	background:url(images/calender_calender_next_9_2.png);
+	width:77px;		height:28px;
+	position:absolute;
+}
+
+
+#month_to_8{
+	background:url(images/calender_calender_next_8.png);
+	width:70px;		height:30px;
+	position:absolute;
+	margin-top:495px;
+	margin-left:130px;
+}
+#month_to_8:hover{
+	background:url(images/calender_calender_next_8_2.png);
+	width:70px;		height:30px;
+	position:absolute;
+}
+
+#event1{
+	background:url(images/label_email_01_g02.jpg);
+	width:136px;	height:20px;	position:absolute;	margin-top:140px;	margin-left:375px;}
+#event1:hover{
+	background:url(images/label_email_01_r02.jpg);
+	width:136px;	height:20px;}
+#event1-1{
+	background:url(images/label_email_02_g02.jpg);
+	width:144px;	height:20px;	position:absolute;	margin-top:218px;	margin-left:-1px;}
+#event1-1:hover{
+	background:url(images/label_email_02_r02.jpg);
+	width:144px;	height:20px;}
+#event2{
+	background:url(images/label_substract_01_g.jpg);
+	width:361px;	height:20px;	position:absolute;	margin-top:175px;	margin-left:150px;}
+#event2:hover{
+	background:url(images/label_substract_01_r.jpg);
+	width:361px;	height:20px;}
+#event2-2{
+	background:url(images/label_substract_02_g.jpg);
+	width:68px;		height:20px;	position:absolute;	margin-top:250px;	margin-left:-1px;}
+#event2-2:hover{
+	background:url(images/label_substract_02_r.jpg);
+	width:68px;		height:20px;}
+#event3{
+	background:url(images/label_findroom_01_g.jpg);
+	width:68px;		height:20px;	position:absolute;	margin-top:250px;	margin-left:75px;}
+#event3:hover{
+	background:url(images/label_findroom_01_r.jpg);
+	width:68px;		height:20px;}
+#event4{
+	background:url(images/label_cancelroom_01_g.jpg);
+	width:286px;		height:20px;	position:absolute;	margin-top:218px;	margin-left:150px;}
+#event4:hover{
+	background:url(images/label_cancelroom_01_r.jpg);
+	width:286px;		height:20px;}
+#event5{
+	background:url(images/label_givemoney_01_g.jpg);
+	width:208px;	height:20px;	position:absolute;	margin-top:250px;	margin-left:303px;}
+#event5:hover{
+	background:url(images/label_givemoney_01_r.jpg);
+	width:208px;	height:20px;}
+#event5-2{
+	background:url(images/label_givemoney_02_g.jpg);
+	width:511px;	height:20px;	position:absolute;	margin-top:297px;	margin-left:-1px;}
+#event5-2:hover{
+	background:url(images/label_givemoney_02_r.jpg);
+	width:511px;	height:20px;}
+#event5-3{
+	background:url(images/label_givemoney_03_g.jpg);
+	width:511px;	height:20px;	position:absolute;	margin-top:40px;	margin-left:-1px;}
+#event5-3:hover{
+	background:url(images/label_givemoney_03_r.jpg);
+	width:511px;	height:20px;}
+#event5-4{
+	background:url(images/label_givemoney_04_g.jpg);
+	width:443px;	height:20px;	position:absolute;	margin-top:120px;	margin-left:-1px;}
+#event5-4:hover{
+	background:url(images/label_givemoney_04_r.jpg);
+	width:443px;	height:20px;}
+#event6{
+	background:url(images/label_fresh_01_g02.jpg);
+	width:59px;		height:20px;	position:absolute;	margin-top:74px;	margin-left:451px;}
+#event6:hover{
+	background:url(images/label_fresh_01_r02.jpg);
+	width:59px;		height:20px;}
+#event6-2{
+	background:url(images/label_fresh_02_g02.jpg);
+	width:67px;		height:20px;	position:absolute;	margin-top:150px;	margin-left:-1px;}
+#event6-2:hover{
+	background:url(images/label_fresh_02_r02.jpg);
+	width:67px;		height:20px;}
+#event7{
+	background:url(images/label_english_01_g.jpg);
+	width:68px;		height:20px;	position:absolute;	margin-top:150px;	margin-left:74px;}
+#event7:hover{
+	background:url(images/label_english_01_r.jpg);
+	width:68px;		height:20px;}
+#event8{
+	background:url(images/label_freshcamp_01_g.jpg);
+	width:68px;		height:20px;	position:absolute;	margin-top:150px;	margin-left:148px;}
+#event8:hover{
+	background:url(images/label_freshcamp_01_r.jpg);
+	width:68px;		height:20px;}
+#event9{
+	background:url(images/label_time_01_g.jpg);
+	width:69px;		height:20px;	position:absolute;	margin-top:150px;	margin-left:223px;}
+#event9:hover{
+	background:url(images/label_time_01_r.jpg);
+	width:69px;		height:20px;}
+#event10{
+	background:url(images/label_train_01_g.jpg);
+	width:67px;		height:20px;	position:absolute;	margin-top:150px;	margin-left:299px;}
+#event10:hover{
+	background:url(images/label_train_01_r.jpg);
+	width:67px;		height:20px;}
+#event11{
+	background:url(images/label_exchinese_01_g.jpg);
+	width:68px;		height:20px;	position:absolute;	margin-top:150px;	margin-left:373px;}
+#event11:hover{
+	background:url(images/label_exchinese_01_r.jpg);
+	width:68px;		height:20px;}
+#event12{
+	background:url(images/label_select_01_g.jpg);
+	width:286px;	height:20px;	position:absolute;	margin-top:180px;	margin-left:223px;}
+#event12:hover{
+	background:url(images/label_select_01_r.jpg);
+	width:286px;	height:20px;}
+#event12-2{
+	background:url(images/label_select_02_g.jpg);
+	width:511px;	height:20px;	position:absolute;	margin-top:290px;	margin-left:-1px;}
+#event12-2:hover{
+	background:url(images/label_select_02_r.jpg);
+	width:511px;	height:20px;}
+#event12-3{
+	background:url(images/label_select_03_g.jpg);
+	width:294px;	height:20px;	position:absolute;	margin-top:403px;	margin-left:-1px;}
+#event12-3:hover{
+	background:url(images/label_select_03_r.jpg);
+	width:294px;	height:20px;}
+#event13{
+	background:url(images/label_check_01_g.jpg);
+	width:67px;		height:20px;	position:absolute;	margin-top:210px;	margin-left:299px;}	
+#event13:hover{
+	background:url(images/label_check_01_r.jpg);
+	width:67px;		height:20px;}
+#event14{
+	background:url(images/label_open_01_g02.jpg);
+	width:136px;		height:20px;	position:absolute;	margin-top:210px;	margin-left:373px;}
+#event14:hover{
+	background:url(images/label_open_01_r02.jpg);
+	width:136px;		height:20px;}
+#event14_2{
+	background:url(images/label_open_02_g02.jpg);
+	width:144px;		height:20px;	position:absolute;	margin-top:260px;	margin-left:-1px;}
+#event14_2:hover{
+	background:url(images/label_open_02_r02.jpg);
+	width:144px;		height:20px;}
+#event15{
+	background:url(images/label_cwrite_01_g.jpg);
+	width:68px;		height:20px;	position:absolute;	margin-top:260px;	margin-left:373px;}
+#event15:hover{
+	background:url(images/label_cwrite_01_r.jpg);
+	width:68px;		height:20px;}
+#event16{
+	background:url(images/label_write_01_g.jpg);
+	width:368px;	height:20px;	position:absolute;	margin-top:320px;	margin-left:74px;}
+#event16:hover{
+	background:url(images/label_write_01_r.jpg);
+	width:368px;	height:20px;}
+#event17{
+	background:url(images/label_soldier_01_g.jpg);
+	width:68px;		height:20px;	position:absolute;	margin-top:350px;	margin-left:74px;}
+#event17:hover{
+	background:url(images/label_soldier_01_r.jpg);
+	width:68px;		height:20px;}
+#event18{
+	background:url(images/label_change_01_g.jpg);
+	width:210px;	height:20px;	position:absolute;	margin-top:403px;	margin-left:299px;}
+#event18:hover{
+	background:url(images/label_change_01_r.jpg);
+	width:210px;	height:20px;}
+#event18-2{
+	background:url(images/label_change_02_g.jpg);
+	width:144px;	height:20px;	position:absolute;	margin-top:448px;	margin-left:-1px;}
+#event18-2:hover{
+	background:url(images/label_change_02_r.jpg);
+	width:144px;	height:20px;}
+	
+/*---------------opt_check------------------*/
+#calender_all{
+	float:left;}
+
+#calender_index_top{
+	background:url(images/calender_bottom2_1.png);
+	width:580px;	height:99px;	margin-left:-10px;}
+#calender_index_mid{
+	background:url(images/calender_bottom2_3.png);
+	width:580px;	min-height:1px;	margin-left:-10px;}
+#calender_index_buttom{
+	background:url(images/calender_bottom2_2_2.png);
+	width:580px;	height:200px;	margin-left:-12px}
+#title{
+	margin-top:70px;	margin-left:45px;	position:absolute;
+	font-size:20px;	font-weight:bold;}
+#edit_del{
+	margin-top:70px;	margin-left:345px;	position:absolute;}
+#content{
+	margin-left:50px;	padding-top:1px;	width:462px;
+	color:#333333;}
+#paper_backgr{
+	background:url(images/finished_paper.png);
+	width:200px;	height:80px;	margin-left:332px;}
+#status{
+	margin-top:45px;	margin-left:385px;
+	position:absolute;}
+#safed{
+	color:#66CC66}
+#del_fin{
+	background:url(images/finished_botton2.png);	width:92px;	height:21px;	margin-top:5px;	margin-left:4px;}
+#fin{
+	background:url(images/finished_botton1.png);	width:92px;	height:21px;	margin-top:5px;	margin-left:4px;}
+#buttom_block{
+	width:92px;	height:21px;	margin-top:5px;	margin-left:4px;}	
+#former_pic{
+	background:url(images/calender_content_left.png);	width:43px;	height:30px;
+	position:absolute;	margin-top:134px;	margin-left:45px;}
+#former_pic:hover{
+	background:url(images/calender_content_left_2.png);	width:43px;	height:30px;
+	position:absolute;}
+#later_pic{
+	background:url(images/calender_content_right.png);	width:46px;	height:28px;
+	position:absolute;	margin-top:134px;	margin-left:380px;}
+#later_pic:hover{
+	background:url(images/calender_content_right_2.png);	width:46px;	height:28px;
+	position:absolute;}
+#former{
+	position:absolute;	margin-top:139px;	margin-left:93px;
+	width:86px;	height:16px;	overflow:hidden;	color:#666666;	font-size:14px;}
+#later{
+	position:absolute;	margin-top:139px;	margin-left:290px;
+	width:86px;	height:16px;	overflow:hidden;	color:#666666;	font-size:14px;}
+#return_calender{
+	background:url(images/calender_content_back.png);	width:33px;	height:34px;
+	position:absolute;	margin-top:127px;	margin-left:465px;}
+#return_calender:hover{
+	background:url(images/calender_content_back_2.png);	width:33px;	height:34px;
+	position:absolute;}
+
+a.superlink:link{color:#0099FF;text-decoration:none}/*連結*/
+a.superlink:visited{color:#0099FF;text-decoration:none}/*已被點過的連結*/
+a.superlink:hover{color:#0033FF;text-decoration:underline}/*滑鼠移到連結*/
+a.superlink:active{color:#0000FF;text-decoration:underline}/*正被點到的連結*/

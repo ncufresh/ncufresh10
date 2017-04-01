@@ -1,0 +1,22 @@
+<div class="statistics">
+
+	<div class="title"><{$title}></div>
+	<div class="description"><{$description}></div>
+
+	<table><tbody>
+		<tr>
+			<th>問題</th><th>選項</th><th>人數</th>				
+		</tr>
+		<{section loop=$opt_count name=i}>
+			<{section loop=$opt_count[i].options name=j}>
+			<tr>
+				<{if $smarty.section.j.iteration == 1}>
+					<td rowspan="<{$smarty.section.j.total}>"><{$opt_count[i].topic}></td>
+				<{/if}>	
+					<td><{$opt_count[i].options[j].option}></td><td><{$opt_count[i].options[j].count}></td>
+			</tr>
+			<{/section}>
+		<{/section}>
+	</tbody></table>
+
+</div>

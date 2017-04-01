@@ -1,0 +1,25 @@
+th{
+	background-color:#7fbf40;
+}
+td{
+	border-bottom:#000000 2px solid;
+}
+table{
+	border:0;
+}
+.tool{
+	text-align:center;
+}
+.tool img{
+	height:20px;
+}
+.tool img:hover{
+	background-color:#b4c3b4;
+}
+#new{
+	color:blue;
+}
+#new:hover{
+	text-decoration:underline;
+	cursor:pointer;
+}

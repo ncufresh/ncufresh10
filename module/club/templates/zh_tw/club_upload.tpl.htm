@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div>
+2010大一生活知訊網
+<br />
+社團上傳介面
+<br />
+</div>
+<form action="clubUpload.php" method="post" enctype="multipart/form-data" value="上傳" name="form1" >
+社團名稱:<input name="club_name" type="text" value="<{$date.club_name}>"/><br />
+社團性質:<input name="club_property" type="text" value="<{$date.club_property}>"/><br />
+*聯絡方式:<br />
+社長手機:<input name="phone1" type="text" value="<{$date.phone1}>"/><br />
+二進位ID:<input name="bbsID1" type="text" value="<{$date.bbsID1}>"/><br />
+Email:<input name="mail1" type="text" value="<{$date.mail1}>"/><br />
+副社手機:<input name="phone2" type="text" value="<{$date.phone2}>"/><br />
+二進位ID:<input name="bbsID2" type="text" value="<{$date.bbsID2}>"/><br />
+Email:<input name="mail2" type="text" value="<{$date.mail2}>"/><br />
+
+<br />
+社團照片<br />                       
+<!--><input type="hidden" name="MAX_FILE_SIZE" value="10240"/><-->
+上傳檔案1:
+<input name="userfile1" type="file" value="<{$date.userfile1}>"/><br />
+上傳檔案2:
+<input type="file" name="userfile2" id="fileField" value="<{$date.userfile2}>"/>
+
+<br />
+*社團簡介:<br /><textarea name="introduceClub" cols="40" rows="10">
+{$date.introduceClub}</textarea>:<br />
+
+社團網站:
+<label for="siteClub"></label>
+<input type="text" name="siteClub" id="siteClub" value="<{$date.siteClub}>"/>
+<br />
+
+二進位板名:
+<label for="bbsClub"></label>
+<input type="text" name="bbsClub" id="bbsClub" value="<{$date.bbsClub}>"/>
+<br />
+<input name="" type="reset" value="重新填寫" />
+<input type="submit" name="Submit" value="確定"/>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<div id="<{$top_css}>"> 
+<div class="bread_photo">
+	  <a>
+         <img src="templates/zh_tw/images/bread_1.png"/>
+      </a>
+</div>
+
+<div class="bread_link">
+   <a class="bread_css_1" href="index.php">系所社團</a>
+	  >
+   <a class="bread_css_1" href="<{$link}>"><{$result.property}>
+       <!-- <{if $result.category_id == 1}>
+   	   <{elseif $result.category_id == 2}>
+	   <{elseif $result.category_id == 3}>
+	   <{elseif $result.category_id == 4}>
+	   <{elseif $result.category_id == 5}>
+	   <{else}>
+	   <{/if}> -->
+   </a>
+      >
+   <a class="bread_css_2" ><{$result.club_name}></a>
+</div>   
+<br class="clear" />
+</div>
+
+<div id="<{$title_css}>"> 
+<{if $result.category_id == 1}>
+   <div id="club_1"> 
+      <{$result.club_name}>
+   </div>
+<{else}>
+   <div id="club"> 
+      <{$result.club_name}>
+   </div>
+<{/if}>
+</div>
+<div id="content">	
+	<a class="images">
+         <img src="<{$result.img_1}>" width="350" height="255"/>　
+    </a>
+	<a class="images">
+         <img src="<{$result.img_2}>" width="350" height="255"/>　
+    </a>
+	<br /><br />
+	<{if $result.category_id != 6}>
+	<table>
+	<tr>
+	   <th><b class="title">‧社團簡介：</b></th>
+	</tr>
+	<tr>
+	   <th><div class="intro"><{$result.intro}></div></th>
+	</tr>
+	<tr>
+	   <th><b class="title"><br />‧社長：</th>
+	</tr>
+	<tr>
+	   <th><b class="title">　　　手機：</b><{$result.tel_1}> </th>
+	</tr>
+	<tr>
+	   <th><b class="title">　　　二進位ID：</b><{$result.bbs_id_1}></th>
+    </tr>
+	<tr>
+	   <th><b class="title">　　　Email：</b><a class="email_css"><{$result.email_1}></a></th>
+	</tr>
+	<tr>
+	   <th><b class="title"><br />‧副社長：</th>
+    </tr>
+	<tr>
+	   <th><b class="title">　　　手機：</b><{$result.tel_2}></th>
+    </tr>
+	<tr>
+	   <th><b class="title">　　　二進位ID：</b><{$result.bbs_id_2}> </th>
+	</tr>
+	<tr>
+	   <th><b class="title">　　　Email：</b><a class="email_css"><{$result.email_2}></a></th>
+    </tr> 
+	<tr>
+	   <th><b class="title"><br />‧社團網站：</b><a class="link_1" href ="<{$result.website}>" ><{$result.website}> </a></th>
+	</tr>
+	<tr>
+	   <th><b class="title"><br />‧二進位板名：</b><{$result.bbs_site}></th>
+    </tr>
+	</table>
+	<{else}>
+	<table>
+	<tr>
+	   <th><b class="title">‧系所簡介：</b></th>
+	</tr>
+	<tr>
+	   <th><div class="intro"><{$result.intro}></div></th>
+	</tr>
+	<tr>
+	   <th><b class="title"><br />‧系代：</th> 
+	</tr>
+	<tr>
+	   <th><b class="title">　　　手機：</b><{$result.tel_1}></th> 
+	</tr>
+	<tr>
+	   <th><b class="title">　　　二進位ID：</b><{$result.bbs_id_1}> </th>
+	</tr>
+	<tr>
+	   <th><b class="title">　　　Email：</b><a class="email_css"><{$result.email_1}> </a></th>
+	</tr>
+	<tr>
+	   <th><b class="title"><br />‧副系代：</th>
+	</tr>
+	<tr>
+	   <th><b class="title">　　　手機：</b><{$result.tel_2}> </th>
+	</tr>
+	<tr>
+	   <th><b class="title">　　　二進位ID：</b><{$result.bbs_id_2}> </th>
+	</tr>
+	<tr>
+	   <th><b class="title">　　　Email：</b><a class="email_css"><{$result.email_2}><a> </th>
+	</tr>
+	<tr>
+	   <th><b class="title"><br />‧系所網站：</b><a class="link_1" href ="<{$result.website}>" ><{$result.website}></a></th>
+	</tr>
+	<tr>
+	   <th><b class="title"><br />‧系所論壇：</b><a class="link_1" href ="<{$currcfg.URL_ROOT_PATH}>/<{$result.forum}>" >前往論壇</a></th>
+	</tr>
+	<tr>
+	   <th><b class="title"><br />‧二進位板名：</b><{$result.bbs_site}> </th>
+	</tr>
+	</table>
+	<{/if}>
+</div>
+<div id="<{$footer_css}>"> </div>
+

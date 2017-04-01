@@ -1,0 +1,58 @@
+<script type="text/javascript">
+function delete_anno(input_tid)
+{
+	var is_delete_checked = confirm("確認刪除此篇公告？");
+	if(is_delete_checked)
+	{
+		J.ajax({
+			url: 'delete_ext.php',
+			data: {
+				action: 'op_anno_delete',
+				tid: input_tid,
+			},
+			success: function(response){
+				location.href="list_anno.php?action=delete_success";
+			}
+		});
+	}
+}
+</script>
+<div id="view_anno_main">
+  <div class="topic"><{$anno.title}></div>
+  <div class="text"><{$anno.contents}></div>
+  <br /><br />
+  <div class="view_anno_info">
+  <span class="back">
+  <a href ="list_anno.php"><img src="templates/zh_tw/images/back.png"></a></span>
+  <{if $currmodule->is_admin() == TRUE}>管理功能：
+  <a title="編輯公告" href="edit_anno.php?action=edit&tid=<{$anno.tid}>">[編輯公告]</a>
+  <a title="刪除公告" onclick="delete_anno(<{$anno.tid}>);">[刪除公告]</a>
+   / <{/if}>
+   <span class="people">作者：<{$anno.username}> (編輯時間：<{$anno.datetime}>)</span>
+   <br class="clear"/>
+   </div>
+</div>
+
+<{if $is_link_exist == TRUE}>
+<div class="ext_main">
+  <div class="ext_left">[相關連結]:</div>
+  <div class="ext_right">
+  <{section name=i loop=$link_array}>
+  <a title="<{$link_array[i].title}>" target="_blank" href="<{$link_array[i].path}>"><{$link_array[i].title}></a><br />
+  <{/section}>
+  </div>
+  <br class="clear" />
+</div>
+<{/if}>
+
+<{if $is_file_exist == TRUE}>
+<div class="ext_main">
+  <div class="ext_left">[附件檔案]:</div>
+  <div class="ext_right">
+  <{section name=i loop=$file_array}>
+  <a title="<{$file_array[i].title}>" target="_blank" href="<{$file_array[i].path}>"><{$file_array[i].title}></a><br />
+  <{/section}>
+  </div>
+  <br class="clear" />
+</div>
+<{/if}>

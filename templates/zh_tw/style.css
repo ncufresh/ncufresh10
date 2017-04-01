@@ -1,0 +1,183 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* -- Global Tags -- */
+body
+{
+	font-size: 16px;
+	font-family: Arial, "新細明體";
+	margin: 0px;
+	color:#333333;
+}
+
+a{			color: #333333;	text-decoration: none;}
+a:hover{	color: #3399FF;	text-decoration: underline;}
+
+input,textarea
+{
+	font-size: 16px;
+	color: #666666;
+	border: #CCCCCC solid 1px;
+}
+
+img
+{
+	border: 0px;
+}
+
+code
+{
+	text-decoration: underline;
+	font-family: "Consolas";
+	font-size: small;
+}
+
+.clear{	display: block;	clear: both;}
+.dec_hr{color: #FFFFFF; border: 0px; border-top: 1px #999999 dashed;}
+.warning_msg{color: #FF0000;	text-decoration: underline;}
+
+/* -- NCUFresh 2010 menu botton -- */
+
+.btt{	width: 85px; height: 40px; display: block;}
+
+#btt1{		background:url(images/btt1.png);}
+#btt1:hover{background:url(images/bt1.png);}
+
+#btt2{		background:url(images/btt2.png);}
+#btt2:hover{background:url(images/bt2.png);}
+
+#btt3{		background:url(images/btt3.png);}
+#btt3:hover{background:url(images/bt3.png);}
+
+#btt4{		background:url(images/btt4.png);}
+#btt4:hover{background:url(images/bt4.png);}
+
+#btt5{		background:url(images/btt5.png);}
+#btt5:hover{background:url(images/bt5.png);}
+
+#btt6{		background:url(images/btt6.png);}
+#btt6:hover{background:url(images/bt6.png);}
+
+#btt7{		background:url(images/btt7.png);}
+#btt7:hover{background:url(images/bt7.png);}
+
+#btt8{		background:url(images/btt8.png);}
+#btt8:hover{background:url(images/bt8.png);}
+
+/* -- NCUFresh 2010 mainframe container -- */
+
+#main_top{			min-width: 1024px;  height: 212px;	background: url(images/sky.png) repeat-x;}
+#main_top_banner{	width: 1024px;	height: 212px;	background: url(images/banner.png);	margin: auto;}
+
+#main_top_status{	width: 976px;	height: 16px;	position: absolute; margin-left: 0px;	margin-top: 0px;	padding-left: 48px;	padding-top: 4px;	font-size: 12px;}
+#main_top_before_login{	width: 261px;	height: 40px;	position: absolute;	margin-left: 713px;	margin-top: 116px;	font-weight: bold;	color:#FFFFFF;		font-size: 12px;	line-height: 20px;}
+
+#main_top_after_login{	width: 261px;	height: 40px;	position: absolute;	margin-left: 692px;	margin-top: 105px;	font-weight: bold;	color:#FFFFFF;		font-size: 12px;	line-height: 20px;}
+
+#banner_click{		width: 680px;	height: 160px;	position: absolute;	margin-left: 0px;	margin-top: 16px;	display:block;}
+#login_left{		width: 132px;	height: 40px;	float: left;}
+#login_right{		width: 88px;	height: 40px;	float: left;}
+
+#main_bottom{			min-width: 1024px;	min-height: 400px;	background: url(images/bg_line.png) bottom repeat-x;}
+#main_bottom_inner{		width: 1024px;	min-height: 400px;	background: url(images/bg_contents_line.png);	margin: auto;}
+#main_bottom_bottom{	width: 1024px;	height: 126px;		background: url(images/cloud.png);				margin: auto;	font-size: 12px;}
+#copyright{				width: 720px;	height: 40px;		margin-left: 280px;	margin-top: 20px;	position: absolute;}
+
+#menu{		float: left;	width: 85px;	margin: 0px 0px 0px 43px; display: inline;}
+#sub_menu{	float: left;	width: 95px;	font-size: 12px;	line-height: 24px;	padding-left: 10px;}
+#contents{	float: left;	width: 750px;}
+
+/* -- NCU Fresh 2010 Homepage -- */
+#home_main
+{
+	width: 740px;
+}
+
+.home_block
+{
+	width: 370px;
+	min-height: 285px;
+	float: left;
+}
+
+#link_left_up
+{
+	float:left;
+	padding:1px;
+	
+}
+
+#link_left_up_text    /*首頁左下*/
+{
+	border-bottom: dashed 1px #999999;
+	height: 24px;
+}
+#link_left_down
+{
+	float:left;
+	padding-left:56px;
+	padding-top:46px;
+}
+#link_right		 /*首頁右下*/
+{
+	padding-left:16px;
+}
+.link_right_image
+{
+	float:left;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-right:10px;
+	padding-left:10px;
+}
+
+#login_user
+{
+	color:#FFFFFF;
+	font-size:12px;
+	font-weight:bold;
+	line-height:20px;
+	position:absolute;
+}
+#logout_button
+{
+	width:38px;
+	padding-top:22px;
+	padding-left:220px;
+}
+#logout_button a
+{
+    color:#FFFFFF;
+}
+#unread_mes
+{
+	color:#FFFFFF;
+	padding-left:141px;
+}
+#login_image_link
+{
+	padding-left:8px;
+	padding-top:5px;
+	width:197px;
+	position:absolute;
+}
+
+.search_page_title
+{
+	font-weight: bold;
+	color:#333333;
+}
+.search_page_content
+{
+	font-weight: bold;
+	color:#3399FF;
+}
+
+.login_background
+{
+  background:url(images/log.png) no-repeat;
+  width:362px;
+  height:249px;
+  padding:80px 50px;
+  margin:0px auto;
+}

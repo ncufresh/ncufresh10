@@ -1,0 +1,21 @@
+<div class="title"><{$title}></div>
+<div class="description"><{$description}></div>
+
+<table><tbody>
+<tr>
+	<th>使用者</th>
+	<{foreach from=$topics item=i }>
+	<th><{$i}></th>
+	<{/foreach}>
+</tr>
+
+<{foreach from=$answers key=user item=options}>
+<tr>
+		<td><{$user}></td>
+		<{foreach from=$options item=option_1D }>
+			<td><{$option_1D.answer}></td>
+		<{/foreach}>
+</tr>
+<{/foreach}>
+
+</tbody></table>

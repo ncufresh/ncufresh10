@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+
+#aboutus_main
+{
+   width: 750px;	
+   min-height: 200px;	
+   float: left;
+}
+
+#purpose_1
+{
+   font-size:16px; 
+   height:120px;
+   width: 750px;
+   background-image:url('images/purpose.png');
+   background-repeat: no-repeat;
+   margin:0px 0px -10px;
+}
+
+#purpose_2
+{
+   font-size:16px;
+   padding-top:25px;
+   padding-left:50px;
+   padding-bottom:5px;
+   width:615px;
+}
+
+ #photo
+{
+   width:640px;
+   height:480px;
+/*    background-image:url('images/aboutus_photo.jpg');
+   background-repeat: no-repeat; */
+/* <img src="templates\zh_tw\images\nophoto.jpg" width="320" height="240" */
+} 
+
+#team_1
+{
+   font-size:16px; 
+   height:120px;
+   width: 750px;
+   background-image:url('images/team.png');
+   background-repeat: no-repeat;
+   margin:0px 0px -10px;
+}
+
+td#aboutus_title 
+{
+  padding-left:45px;
+}
+
+td#aboutus_content
+{
+  padding-left:10px;
+}
+#team_2
+{
+   width: 750px;
+   padding-left:70px;
+   padding-bottom:5px;
+   font-size:16px;
+}
+
+#joinus_1
+{
+   font-size:16px; 
+   height:120px;
+   width: 750px;
+   background-image:url('images/joinus.png');
+   background-repeat: no-repeat;
+   margin:0px 0px -10px;
+}
+
+#joinus_2
+{
+   font-size:16px;
+   padding-top:25px;
+   padding-left:70px;
+   padding-bottom:5px;
+   width:620px;
+   height:300px;
+}

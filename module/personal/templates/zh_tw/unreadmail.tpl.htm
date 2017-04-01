@@ -1,0 +1,39 @@
+<script type="text/javascript">
+J(document).ready(function(){
+    setTimeout(function(){
+        J('div#wait').hide('slow');
+    }, 1000);
+});
+</script>
+       <div class="m_up">
+		<{if $much!=0}>	
+		  <a href="unreadmail.php"><img alt="未讀訊息" src="templates/zh_tw/images/mailbox/notreadn.png"/></a>
+	    <div class="in_frog"><{$much}></div>
+          <{else}>
+	        <a href="unreadmail.php"><img alt="未讀訊息" src="templates/zh_tw/images/mailbox/notread.png"/></a>
+	        <{/if}>
+	        <a href="haveread.php"><img alt="已讀訊息" src="templates/zh_tw/images/mailbox/nnread.png"/></a>
+	        <a href="sendmail.php"><img alt="寄送訊息" src="templates/zh_tw/images/mailbox/nnsend.png"/></a>
+      </div>
+	<div class="m_back">
+			<div class="mailtop">
+			<div class="mail_title"><img src="templates/zh_tw/images/mailbox/mailtitle.png"/></div>
+			<div class="mail_pe"><img src="templates/zh_tw/images/mailbox/mailsedt.png"/></div>
+			<div class="mail_date"><img src="templates/zh_tw/images/mailbox/maildate.png"/></div>
+	</div>
+	<div class="mail_show">
+			<{if $all_right==true}><div id="wait">發送成功!</div><{/if}> 
+			<{if $much==0}>
+			您沒有未讀訊息<br/>
+			<{/if}>
+				<{section name=i loop=$mail_arr}>
+				<div class="mail_title">
+				<img src="templates/zh_tw/images/mailbox/b.png"/>
+				<a href="contents.php?read=0&mid=<{$mail_arr[i].mid}>&where=unread"><{$mail_arr[i].subject}>
+				</a></div>
+				<div class="mail_pe"><{$mail_arr[i].username}></div>
+				<div class="mail_date"><{$mail_arr[i].datetime}></div><br/>
+			    <{/section}>   
+			</div>
+			
+	</div>

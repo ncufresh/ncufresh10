@@ -1,0 +1,123 @@
+<div id="bread">
+	<div id="bread_image"><img src="templates/zh_tw/images/bread.png" /></div>
+	<div id="bread_text">
+		<a href="index.php" style="color:#999999">論壇專區</a>
+		<{if $cid!=1 && $cid!=2 && $cid!=4}>
+		><a href="dep_list.php" style="color:#999999">系所列表</a>
+		<{/if}>
+		><a href="forum_list.php?cid=<{$cid}>&page=1" style="color:#333333"><{$forum_name}></a>
+	</div>
+	<br class="clear"/>&nbsp;
+</div>
+<br />
+	<div id="forum_list_top_button"><a href="index.php"><img src="templates/zh_tw/images/backca.png" alt="回論壇首頁" /></a>
+	<!--
+        <{if $cid!=4}>
+			<a href="forum_ask.php?cid=<{$cid}>&grid=0"><img src="templates/zh_tw/images/announce.png" alt="發表文章"/></a>
+		<{elseif $cid==4 && $admin=="true"}>
+			<a href="forum_ask.php?cid=<{$cid}>&grid=0"><img src="templates/zh_tw/images/announce.png" alt="發表文章"/></a>
+		<{/if}>
+    -->
+		<{if $cid==1}>
+		<div style="float:left;padding-top:15px;padding-right:12px">
+		文章分類檢視：
+			<select onchange="location.href=this.options[this.selectedIndex].value;" >
+				<option value="forum_list.php#">請選擇</option>
+				<option value="forum_list.php?select=0&amp;cid=1&amp;&page=1">全部</option>
+				<option value="forum_list.php?select=1&amp;cid=1&amp;&page=1">選課</option>
+				<option value="forum_list.php?select=2&amp;cid=1&amp;&page=1">註冊</option>
+				<option value="forum_list.php?select=3&amp;cid=1&amp;&page=1">住宿</option>
+				<option value="forum_list.php?select=4&amp;cid=1&amp;&page=1">生活</option>
+				<option value="forum_list.php?select=5&amp;cid=1&amp;&page=1">護照</option>
+				<option value="forum_list.php?select=6&amp;cid=1&amp;&page=1">其他</option>
+          </select>
+		</div>
+		<{/if}>
+		<br class="clear"/>
+	</div>
+<br />
+	
+<div id="question_list">
+	<!--<{section name=i loop=$page}>
+		<a href="forum_list.php?cid=<{$cid}>&page=<{$page[i]}>"><{$page[i]}></a>
+	<{/section}>-->
+	<{if $cid==1}>
+	<div id="forum_list_top_1">
+	<{elseif $cid==2}>
+	<div id="forum_list_top_2">
+	<{elseif $cid==4}>
+	<div id="forum_list_top_4">
+	<{else}>
+	<div id="forum_list_top_3">
+	<{/if}>
+		
+		<div id="forum_list_page_select_top">
+		<{if $state==0}>
+			<{section name=i loop=$page}>
+				<a href="forum_list.php?cid=<{$cid}>&page=<{$page[i]}>&select=<{$select_num}>"><{if $page[i]==$curr_page}><span id="curr_page"><{$page[i]}></span><{else}><{$page[i]}><{/if}></a>
+			<{/section}>
+		<{elseif $state==1}>
+			<{section name=i loop=$page}>
+				<a href="forum_list.php?cid=<{$cid}>&page=<{$page[i]}>&select=<{$select_num}>"><{if $page[i]==$curr_page}><span id="curr_page"><{$page[i]}></span><{else}><{$page[i]}><{/if}></a>
+			<{/section}>
+			...<a href="forum_list.php?cid=<{$cid}>&page=<{$last_page}>&select=<{$select_num}>">最終頁</a>
+		<{elseif $state==2}>
+			<a href="forum_list.php?cid=<{$cid}>&page=1&select=<{$select_num}>">第一頁</a>...
+			<{section name=i loop=$page}>
+				<a href="forum_list.php?cid=<{$cid}>&page=<{$page[i]}>&select=<{$select_num}>"><{if $page[i]==$curr_page}><span id="curr_page"><{$page[i]}></span><{else}><{$page[i]}><{/if}></a>
+			<{/section}>
+			...<a href="forum_list.php?cid=<{$cid}>&page=<{$last_page}>&select=<{$select_num}>">最終頁</a>
+		<{else}>
+			<a href="forum_list.php?cid=<{$cid}>&page=1&select=<{$select_num}>">第一頁</a>...
+			<{section name=i loop=$page}>
+				<a href="forum_list.php?cid=<{$cid}>&page=<{$page[i]}>&select=<{$select_num}>"><{if $page[i]==$curr_page}><span id="curr_page"><{$page[i]}></span><{else}><{$page[i]}><{/if}></a>
+			<{/section}>
+		<{/if}>
+		</div>
+	</div>
+	
+	<{section name=i loop=$forum_2D}>
+		<div class="single_question" <{if $forum_2D[i].place_top==1}> style="font-weight:bold;"<{/if}>>
+			<div class="ask_img"><img src="<{$currcfg.URL_ROOT_PATH}>/<{$forum_2D[i].head_image}>" alt="頭像" width="60" height="60" /></div>
+			<div class="ask_title"><a href="forum_problem.php?gid=<{$forum_2D[i].gid}>&cid=<{$cid}>&page=1"><{if $forum_2D[i].place_top==1}>[置頂]<{/if}><{if $cid==1}>[<{$forum_2D[i].category}>]<{/if}> <{$forum_2D[i].title}></a></div>
+			<div class="ask_time_forum_list"><{$forum_2D[i].datatime}></div>
+			<div class="ask_name"><{$forum_2D[i].nickname}></div>
+			<div class="ask_reply_amount"><{$forum_2D[i].reply_amount}></div>
+		</div>
+	<{/section}>
+	
+	<{if $cid==1}>
+	<div id="forum_list_bot_1">
+	<{elseif $cid==2}>
+	<div id="forum_list_bot_2">
+	<{elseif $cid==4}>
+	<div id="forum_list_bot_4">
+	<{else}>
+	<div id="forum_list_bot_3">
+	<{/if}>
+		<div id="forum_list_page_select_bot">
+		<{if $state==0}>
+			<{section name=i loop=$page}>
+				<a href="forum_list.php?cid=<{$cid}>&page=<{$page[i]}>&select=<{$select_num}>"><{if $page[i]==$curr_page}><span id="curr_page"><{$page[i]}></span><{else}><{$page[i]}><{/if}></a>
+			<{/section}>
+		<{elseif $state==1}>
+			<{section name=i loop=$page}>
+				<a href="forum_list.php?cid=<{$cid}>&page=<{$page[i]}>&select=<{$select_num}>"><{if $page[i]==$curr_page}><span id="curr_page"><{$page[i]}></span><{else}><{$page[i]}><{/if}></a>
+			<{/section}>
+			...<a href="forum_list.php?cid=<{$cid}>&page=<{$last_page}>&select=<{$select_num}>">最終頁</a>
+		<{elseif $state==2}>
+			<a href="forum_list.php?cid=<{$cid}>&page=1&select=<{$select_num}>">第一頁</a>...
+			<{section name=i loop=$page}>
+				<a href="forum_list.php?cid=<{$cid}>&page=<{$page[i]}>&select=<{$select_num}>"><{if $page[i]==$curr_page}><span id="curr_page"><{$page[i]}></span><{else}><{$page[i]}><{/if}></a>
+			<{/section}>
+			...<a href="forum_list.php?cid=<{$cid}>&page=<{$last_page}>&select=<{$select_num}>">最終頁</a>
+		<{else}>
+			<a href="forum_list.php?cid=<{$cid}>&page=1&select=<{$select_num}>">第一頁</a>...
+			<{section name=i loop=$page}>
+				<a href="forum_list.php?cid=<{$cid}>&page=<{$page[i]}>&select=<{$select_num}>"><{if $page[i]==$curr_page}><span id="curr_page"><{$page[i]}></span><{else}><{$page[i]}><{/if}></a>
+			<{/section}>
+		<{/if}>
+		</div>
+	</div>
+	
+</div>

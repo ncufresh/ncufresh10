@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* -- anno -- */
+#anno_main_block
+{
+	width: 370px;
+	height: auto;
+}
+
+#anno_title_block{	width: 340px;	height: 31px;	padding: 30px 30px 0px 0px;	font-size: 12px;	text-align: right;	background-image: url(images/news.png);}
+#anno_title_block a{color: #FFFFFF;}
+
+.anno_item_block
+{
+	width: 354px;
+	height: 16px;
+	padding: 4px 0px 4px 16px;
+	background: url(images/add.png) no-repeat left;
+	border-bottom: #999999 dashed 1px;
+}
+
+.anno_item_title
+{
+	width: 274px;
+	float: left;
+	display: block;
+}
+
+.anno_item_title a{	font-size: 12px;	color: #333333;}
+
+.anno_item_info
+{
+	width: 80px;
+	font-size: 12px;
+	color: #999999;
+	
+	display: block;
+	float: left;
+}
+
+
+
+/* -- View Announcement -- */
+#view_anno_main
+{
+	width: 640px;
+	min-height: 80px;
+	background: url(images/view_anno.png) top no-repeat;
+	
+	padding: 64px 4px 0px;
+	border-bottom: #999999 dashed 1px;
+	color: #333333;
+	line-height: 24px;
+}
+
+.view_anno_info
+{
+	font-size: 12px;
+	color: #999999;
+	text-align: right;
+}
+
+.view_anno_info a{	color: #999999}
+
+/* -- List Announcement -- */
+.topic
+{
+	font-size:20px;
+	padding-top:10px; 
+	padding-left:10px;
+}
+.text
+{
+    padding-left:25px;
+    padding-top:10px;
+}
+.back
+{
+    float:left;	
+    padding-bottom:9px;
+    padding-left:20px;
+}
+.people
+{
+	margin-top:27px;
+    float:right;	
+}
+.list_title{	background: url(images/view_anno.png) left no-repeat;	width: 610px;	height: 31px;	padding: 30px 30px 0px 0px;	text-align: right;	font-size: 12px; margin-bottom:10px;}
+.list_title a{	color: #FFFFFF;}
+
+.list_anno{		background: url(images/add.png) left no-repeat;			width: 608px;	height: 16px;	padding: 4px 16px;	border-bottom: #999999 dashed 1px;	font-size: 14px;}
+.list_anno a{		color: #000000;}
+.list_anno_title{	width: 420px;	height: 16px;	float: left;}
+.list_anno_info{	width: 180px;	height: 16px;	float: left;	color: #999999;}
+
+/* -- Edit announcement -- */
+
+#edit_anno_main{width: 640px;	min-height: 80px;	background: url(images/edit_anno.png) top no-repeat;	padding: 64px 4px 0px;	color: #333333;	line-height: 24px;}
+.edit_container{width: 640px;	min-height: 16px;	border-bottom: #999999 1px dashed;}
+.edit_var{		width: 120px;	height: 16px;		float: left;	font-weight: bold;	color: #333333;}
+.edit_value{	width: 520px;	min-height: 16px;	float: left;	font-size: 12px;}
+
+.ext_main{	width: 648px;	min-height: 16px;	font-size: 12px;	line-height: 24px;	border-bottom: #999999 dashed 1px;}
+.ext_left{	width: 100px;	min-height: 16px;	float: left;	font-weight: bold;}
+.ext_right{	width: 540px;	min-height: 16px;	float: left;}
+

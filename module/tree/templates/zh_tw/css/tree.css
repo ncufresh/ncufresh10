@@ -1,0 +1,91 @@
+#back
+{
+	background-image:url(../images/back.jpg);
+	background-repeat:no-repeat;
+	height:418px;
+}
+#states
+{
+	padding: 72px 0px 0px 42px;
+	font-size:28px;
+	font-family:"微軟正黑體";
+	font-weight:500;
+}
+#pic1
+{
+	padding: 174px 0px 0px 246px;
+	background-repeat:no-repeat;
+	width:250px;
+	float:left;
+	position:absolute;
+}
+#pic2
+{
+	padding: 148px 0px 0px 240px;
+	background-repeat:no-repeat;
+	width:250px;
+	float:left;
+	position:absolute;
+}
+#pic3
+{
+	padding: 135px 0px 0px 240px;
+	background-repeat:no-repeat;
+	width:250px;
+	float:left;
+	position:absolute;
+}
+#pic4
+{
+	padding: 0px 0px 0px 200px;
+	background-repeat:no-repeat;
+	width:250px;
+	float:left;
+	position:absolute;
+}
+#pic5
+{
+	padding: 12px 0px 0px 180px;
+	background-repeat:no-repeat;
+	float:left;
+	position:absolute;
+}
+#pic5 img
+{
+	height:270px;
+}
+#sun
+{
+	padding: 71px 0px 0px 592px;
+	position:absolute;
+	width:40px;
+	text-align:right;
+}
+#water
+{
+	padding: 112px 0px 0px 594px;
+	position:absolute;
+	width:40px;
+	text-align:right;
+}
+#air
+{
+	padding: 149px 0px 0px 594px;
+	position:absolute;
+	width:40px;
+	text-align:right;
+}
+#fertilizer
+{
+	padding: 188px 0px 0px 594px;
+	position:absolute;
+	width:40px;
+	text-align:right;
+}
+#special
+{
+	padding: 233px 0px 0px 594px;
+	position:absolute;
+	width:40px;
+	text-align:right;
+}

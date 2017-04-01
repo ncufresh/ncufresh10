@@ -1,0 +1,38 @@
+<script type="text/javascript">
+J(document).ready(function(){
+    setTimeout(function(){
+        J('div#wait').hide('slow');
+    }, 1000);
+});
+</script>
+      <div class="m_up">
+		<{if $unmuch!=0}>	
+		  <a href="unreadmail.php"><img alt="未讀訊息" src="templates/zh_tw/images/mailbox/nnnotreadn.png"/></a>
+	    <div class="in_frog"><{$unmuch}></div>
+          <{else}>
+	        <a href="unreadmail.php"><img alt="未讀訊息" src="templates/zh_tw/images/mailbox/nnnotread.png"/></a>
+	        <{/if}>
+
+        <a href="haveread.php"><img alt="已讀訊息" src="templates/zh_tw/images/mailbox/read.png"/></a>
+        <a href="sendmail.php"><img alt="寄送訊息" src="templates/zh_tw/images/mailbox/nnsend.png"/></a>
+      </div>
+	<div class="m_back">
+			<div class="mailtop">
+			<div class="mail_title"><img src="templates/zh_tw/images/mailbox/mailtitle.png"></div>
+			<div class="mail_pe"><img src="templates/zh_tw/images/mailbox/mailsedt.png"></div>
+			<div class="mail_date"><img src="templates/zh_tw/images/mailbox/maildate.png"></div>
+	</div>
+			<{if $all_right==true}><div id="wait">刪除成功!</div><{/if}> 
+			<{section name=i loop=$mail_arr}>
+			<div class="mail_show">
+				<div class="mail_title">
+				<img src="templates/zh_tw/images/mailbox/b.png"/>
+				<a href="contents.php?read=0&mid=<{$mail_arr[i].mid}>&where=haveread"><{$mail_arr[i].subject}>
+				</a></div>
+				<div class="mail_pe"><{$mail_arr[i].username}></div>
+				<div class="mail_date"><{$mail_arr[i].datetime}></div>
+			    <div class="mail_de"><a href="action.php?action=delete&mid=<{$mail_arr[i].mid}>"><img src="templates/zh_tw/images/mailbox/delete.png"></a></div><br/>
+			</div>
+			<{/section}>   
+	</div>
+

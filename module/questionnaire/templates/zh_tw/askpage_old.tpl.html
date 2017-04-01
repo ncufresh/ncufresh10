@@ -1,0 +1,88 @@
+<div class="quesbody">
+	<div class="form_text">
+	<div class="title"><{$title}></div>
+	<div class="description"><{$description}></div>
+	</div>
+
+<form method="post" id="questionnaire"  action="saveAnswer.php">
+
+<input type="hidden" name="qid" value="<{$smarty.get.qid}>">
+
+
+<{section name=i loop=$questions }>
+<div class="questions">
+		<!--<input type="hidden" name="tid[]" value="<{$questions[i].tid}>"/>-->
+	
+	<div class="q_text_top">&nbsp</div>	
+
+	<div class="q_text_middle">
+		<{if $questions[i].required == "required"}>
+		<!--<input type="hidden" name="required[]" value="1"/>-->
+			<label class="redstar">*</label>
+		<{else}>
+		<!--<input type="hidden" name="required[]" value="0"/>-->
+			<label class="hidden">&nbsp&nbsp</label>
+		<{/if}>
+
+		<span class="q_num"><{$smarty.section.i.iteration}>.</span>
+		<span class="q_title"><{$questions[i].t_title}></span><br/>
+		<span class="q_desc"><{$questions[i].t_description}></span>	
+	</div>
+
+	<div class="q_text_bottom"></div>
+	
+	<{if $questions[i].t_type =="0" }>
+		<div class="q_response res_text">	
+			<input type="hidden" name="type[]" value="0" />
+			<label>您的答案：</label><br/>
+			<input type="text" name="q<{$smarty.section.i.iteration}>" class="<{$questions[i].required}>" />
+		</div>
+	<{elseif $questions[i].t_type =="1" }>
+		<div class="q_response res_area">	
+			<input type="hidden" name="type[]" value="1" />
+			<label>您的答案：</label><br/>
+			<textarea name="q<{$smarty.section.i.iteration}>" class="<{$questions[i].required}>"></textarea>
+		</div>
+	<{elseif $questions[i].t_type =="2" }>
+		<div class="q_response res_radio">	
+			<input type="hidden" name="type[]" value="2" />
+			<ul>
+			<{section name=j loop=$questions[i].options }>
+			<li><input type="radio" name="q<{$smarty.section.i.iteration}>" value="<{$questions[i].oids[j]}>" class="<{$questions[i].required}>"/><{$questions[i].options[j]}></li>
+			<{/section}>
+			<{if $questions[i].o_other=="1"}>
+			<li><input type="radio" name="q<{$smarty.section.i.iteration}>" value="0" class="<{$questions[i].required}>"/>其他：<input type="text" name="q<{$smarty.section.i.iteration}>_other"/></li>
+			<{/if}>
+			</ul>
+		</div>	
+	
+	<{elseif $questions[i].t_type =="3" }>
+		<div class="q_response res_check">	
+			<input type="hidden" name="type[]" value="3" />
+		
+			<ul>
+			<{section name=j loop=$questions[i].options }>
+			<li><input type="checkbox" name="q<{$smarty.section.i.iteration}>[]" value="<{$questions[i].oids[j]}>" class="<{$questions[i].required}>"/><{$questions[i].options[j]}></li>
+			<{/section}>
+			<{if $questions[i].o_other=="1"}>
+			<li><input type="checkbox" name="q<{$smarty.section.i.iteration}>[]" value="0" class="<{$questions[i].required}>"/>其他：<input type="text" name="q<{$smarty.section.i.iteration}>_other"/></li>
+			<{/if}>
+			</ul>
+		</div>	
+	<{elseif $questions[i].t_type =="4" }>
+		<div class="q_response res_list">	
+			<input type="hidden" name="type[]" value="4" />
+		
+			<select name="q<{$smarty.section.i.iteration}>" class="<{$questions[i].required}>">
+			<{section name=j loop=$questions[i].options }>
+				<option value="<{$questions[i].oids[j]}>" ><{$questions[i].options[j]}></option>
+			<{/section}>
+			</select>
+		</div>
+	<{/if}>
+</div>
+<{/section}>
+
+<input type="submit" value="送出" />
+</form>
+</div>

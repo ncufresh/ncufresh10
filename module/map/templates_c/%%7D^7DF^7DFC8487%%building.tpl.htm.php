@@ -1,0 +1,38 @@
+<?php /* Smarty version 2.6.26, created on 2010-08-06 07:29:05
+         compiled from zh_tw/building.tpl.htm */ ?>
+<div id="mapbuilding" class="map">
+<a href="building_nojs_loadcontent.php?key=34&samname=pq01" id="building1" class="sprite" onClick="showbox();showcontent(34);building_showsmp('pq01');return false;"></a>
+
+<a href="building_nojs_loadcontent.php?key=2&samname=p03" id="building3" class="sprite" onClick="showbox();showcontent(2);building_showsmp('p03');return false;"></a>
+
+<a href="building_nojs_loadcontent.php?key=15&samname=p06&table=16" id="building6" class="sprite" onClick="showbox();showcontent(15);showtable(16);building_showsmp('p06');return false;"></a>
+
+<a href="building_nojs_loadcontent.php?key=33&samname=p05&table=42" id="building5" class="sprite" onClick="showbox();showtable(42);showcontent(33);building_showsmp('p05');return false;"></a>
+
+<a href="building_nojs_loadcontent.php?key=10&samname=p04&table=11" id="building4" class="sprite" onClick="showbox();showcontent(10);showtable(11);building_showsmp('p04');return false;"></a>
+
+<a href="building_nojs_loadcontent.php?key=19&samname=p08" id="building8" class="sprite" onClick="showbox();showcontent(19);building_showsmp('p08');return false;"></a>
+
+<a href="building_nojs_loadcontent.php?key=44&samname=p09" id="building9" class="sprite" onClick="showbox();showcontent(44);building_showsmp('p09');return false;"></a>
+
+<a href="building_nojs_loadcontent.php?key=1&samname=p07" id="building7" class="sprite" onClick="showbox();showcontent(1);building_showsmp('p07');return false;"></a>
+
+<div id="box" class="panel">
+        <div id="box_top">
+        
+         
+        </div>
+        <div id="box_center" >
+       <a onClick="hidebox();return false;"><img id="pho_box_close"  style="float:right;" src="templates/zh_tw/images/close.png"></a>
+        <span id="sample"></span>
+       	<div id="table" style="position:relative;">
+        
+        </div>
+        
+	<br/><br/><br/>
+        <div id="content">
+        </div>
+        </div>
+	<div id="box_bottom"></div>
+      </div>
+</div>

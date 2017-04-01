@@ -1,0 +1,79 @@
+<script type="text/javascript">
+J(document).ready(function(){
+    setTimeout(function(){
+        J('div#wait').hide('slow');
+    }, 5000);
+});
+
+function renew(input)
+{
+	J('div#head_image').html("<img src=\"<{$currcfg.URL_ROOT_PATH}>/"+ input + "\" />");
+}
+
+ jQuery(function(J){
+	J('#exampleRange').datepicker({
+          rangeSelect: true,
+          firstDay: 1,
+          formatDate: "yy-mm-dd",
+	      showOn: 'both',
+          buttonImageOnly: true,
+          buttonImage: 'templates/zh_tw/images/calendar.png'});
+});
+
+</script>
+		<div class="top">
+        </div>
+		<div class="back">
+			<div class="must"><div class="star">*欄位為必填項目<br/></div></div>
+			<div class="text">
+			<{if $all_right==false}><div id="wait"><{$errmsg}></div><{/if}>		
+				<form action="action.php?action=reg" method="post">
+			     
+			      <div class="head_i">
+					<div id="head_image"><img src="templates/zh_tw/images/head/00.jpg"/></div>
+					<br/>
+					<div class="star">*</div>
+					<select size=1 name="head" onChange="renew(this.options[this.selectedIndex].value);">
+					    <option value="請 選 擇">請 選 擇</option>
+					<{section name=i loop=$head}>   
+						<option value="<{$head[i].position}>"><{$head[i].headname}></option>
+					<{/section}>
+					</select>
+			       </div>
+			     
+			      <div class="area">
+			 	  <div class="star">*</div><div class="q">真實姓名:</div>
+			 	  <div class="form"><input type="text" name="realname" value="<{$post_realname}>"/><br /></div>
+			      <div class="star">*</div><div class="q">暱稱:</div>
+			      <div class="form"><input type="text" name="nickname" value="<{$post_nickname}>"/><br /></div>
+			      <div class="star">*</div><div class="q">帳號:</div>
+			      <div class="form"><input type="text" name="username" value="<{$post_username}>"/><br /></div>
+			      <div class="star">*</div><div class="q">密碼:</div>
+			      <div class="form"><input type="password" name="password" /><br /></div>
+			      <div class="star">*</div><div class="q">確認密碼:</div>
+			      <div class="form"><input type="password" name="password_check" /><br /></div>
+			      <div class="star">*</div><div class="q">系所:</div>
+			      <div class="form">
+			      <{$box}></div>
+			      
+			      <div class="q">畢業高中:</div>
+			      <div class="form"><input type="text" name="senior_high" value="<{$post_senior}>"/><br /></div>
+			      <div class="q">生日:</div>
+			      <div class="form"><input type="text" id="exampleRange" name="birthday" value=""><br /></div>
+			      <div class="q">email:</div>
+			      <div class="form"><input type="text" name="email" value="<{$post_email}>"/><br /></div>
+			      <div class="q">個人首頁:</div>
+			      <div class="form"><input type="text" name="self_website" value="<{$post_website}>"/><br /></div>
+			      <div class="q_intro">自我介紹:</div>
+			      <div class="form_intro"><textarea name="self_intro" cols="24" rows="5" class="myTextarea"><{$post_intro}></textarea><br /></div>
+			      <div class="q">請輸入驗證碼</div>
+			      <div class="form"><input type="text" name="num"/><br /></div>
+			      <div class="num"><img src="../../core/lib/ac_random_im_generator.php"/><br/></div>
+			      <div class="button_1"><input type="image" border="0" src="templates/zh_tw/images/data/sub.png" value="寄出" /></div>
+			      <div class="button_2"><input type="reset" class="clear" value="" /> </div>
+			      </form>
+			     </div>
+		    </div>
+     </div>
+      <div class="footer">
+     </div>

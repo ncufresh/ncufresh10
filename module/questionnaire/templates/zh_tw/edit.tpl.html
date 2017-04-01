@@ -1,0 +1,28 @@
+<{if $qform_exist}>
+
+<div class="formbody">
+	
+	<input type="hidden" name="qid" value="<{$qid}>">
+	<div class="q-body">
+		<div class="txtbar">
+			<div class="text" class="form_title"><label for="form_title_text">問卷標題</label></div>
+			<input type="text" id="form_title_text" name="form_title" value="<{$q_title}>"/><br/>
+			<div class="text" class="form_desc"><label for="form_desc_text">問卷描述</label></div>
+			<textarea id="form_desc_text" name="form_desc"><{$q_desc}></textarea>
+		</div>
+		
+		<!--這裡要放問題編輯區塊-->
+		<{include file="zh_tw/$qbody"}>
+		
+	</div>
+</div>
+
+<div class="toolbar">
+		<span id="add"><button type="button">新增問題</button></span>
+		<span id="save"><button type="button">儲存問卷</button></span>
+		<div id="saveMsg">&nbsp</div>
+</div>
+
+<{else}>
+<div>沒有此份問卷喔!!請再確認一次或是<a href="new.php">點此新增一份新的問卷</a></div>
+<{/if}>

@@ -1,0 +1,56 @@
+<link href="templates/zh_tw/css/container.css" rel="stylesheet" type="text/css"/>
+<div>
+	<div id="top<{$num}>">
+		<{if $num == 1}>　
+			<a href="must.php?num=1" title="大一新生區">
+		    <img id="select" src="templates/zh_tw/images/new_title_b.png"/></a>　
+			<a href="must.php?num=2" title="大一復學區">
+   			<img id="link" src="templates/zh_tw/images/return_title_s.png"/></a>　
+			<a href="must.php?num=3" title="大一相關須知">
+   			<img id="link" src="templates/zh_tw/images/related_title_s.png"/></a>　
+			<a href="must.php?num=4" title="文件下載">
+   			<img id="link" src="templates/zh_tw/images/download_title_s.png"/></a>
+		<{/if}>
+		<{if $num == 2}>　
+			<a href="must.php?num=1" title="大一新生區">
+		    <img id="link" src="templates/zh_tw/images/new_title_s.png"/></a>　
+			<a href="must.php?num=2" title="大一復學區">
+   		 	<img id="select" src="templates/zh_tw/images/return_title_b.png"/></a>　
+			<a href="must.php?num=3" title="大一相關須知">
+	    	<img id="link" src="templates/zh_tw/images/related_title_s.png"/></a>　
+			<a href="must.php?num=4" title="文件下載">
+	    	<img id="link" src="templates/zh_tw/images/download_title_s.png"/></a>
+		<{/if}>
+		<{if $num == 3}>　
+	   		<a href="must.php?num=1" title="大一新生區">
+	  	    <img id="link" src="templates/zh_tw/images/new_title_s.png"/></a>　
+			<a href="must.php?num=2" title="大一復學區">
+	    	<img id="link" src="templates/zh_tw/images/return_title_s.png"/></a>　
+			<a href="must.php?num=3" title="大一相關須知">
+	    	<img id="select" src="templates/zh_tw/images/related_title_b.png"/></a>　
+			<a href="must.php?num=4" title="文件下載">
+	    	<img id="link" src="templates/zh_tw/images/download_title_s.png"/></a>
+		<{/if}>
+	    <{if $num == 4}>　
+	   		<a href="must.php?num=1" title="大一新生區">
+	  	    <img id="link" src="templates/zh_tw/images/new_title_s.png"/></a>　
+			<a href="must.php?num=2" title="大一復學區">
+	    	<img id="link" src="templates/zh_tw/images/return_title_s.png"/></a>　
+			<a href="must.php?num=3" title="大一相關須知">
+	    	<img id="link" src="templates/zh_tw/images/related_title_s.png"/></a>　
+			<a href="must.php?num=4" title="文件下載">
+	    	<img id="select" src="templates/zh_tw/images/download_title_b.png"/></a>
+		<{/if}>
+	</div>
+	<div id="mid<{$num}>">
+		<div id="mid_c">
+        	<a href="must.php?num=<{$num}>" title="回上一頁">
+  		    <img src="templates/zh_tw/images/back.png"/></a>　
+			<hr />
+			<{section name=i loop=$must_2D}>
+			<{$must_2D[i].content}><br/>
+			<{/section}>
+		</div>
+	</div>
+    <div id="bottom<{$num}>"><br /><br /></div>
+</div>

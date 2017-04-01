@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+.admin_title_container
+{
+	border-top: #4f81bd 1px solid;
+	border-bottom: #4f81bd 1px solid;
+	padding: 4px;
+	width: 700px;
+	
+	background-color: #d3dfee;
+	color: #365f91;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.admin_main_container
+{
+	width: 700px;
+	padding: 4px;
+	
+	border-bottom: #4f81bd 1px solid;
+	color: #365f91;
+}
+
+.admin_var_name
+{
+	width: 200px;
+	min-height: 16px;
+	float: left;
+}
+
+.admin_value
+{
+	width: 500px;
+	min-height: 16px;
+	float: left;
+}

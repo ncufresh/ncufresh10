@@ -1,0 +1,151 @@
+<div id="bread">
+	<div id="bread_image"><img src="templates/zh_tw/images/bread.png" /></div>
+	<div id="bread_text">
+		<a href="index.php" style="color:#999999">論壇專區</a>
+		<{if $cid!=1 && $cid!=2 && $cid!=4}>
+		><a href="dep_list.php" style="color:#999999">系所列表</a>
+		<{/if}>
+		><a href="forum_list.php?cid=<{$cid}>&page=1" style="color:#999999"><{$forum_name}></a>
+		><a href="forum_problem.php?gid=<{$gid}>&cid=<{$cid}>&page=1" style="color:#333333"><{$forum_1D.title}></a>
+	</div>
+	<br class="clear"/>&nbsp;
+	<br class="clear"/>&nbsp;
+</div>
+<div>
+	<span id="question_list_top_button"><a href="forum_list.php?cid=<{$cid}>&page=1"><img src="templates/zh_tw/images/backlist.png" alt="回問題列表" /></a>
+  <!--	
+	<{if $cid!=4}>
+		<a href="forum_ask.php?cid=<{$cid}>&grid=<{$forum_1D.grid}>"><img src="templates/zh_tw/images/announce.png" alt="發表文章" /></a>
+	<{elseif $cid==4 && $admin=="true"}>
+		<a href="forum_ask.php?cid=<{$cid}>&grid=<{$forum_1D.grid}>"><img src="templates/zh_tw/images/announce.png" alt="發表文章" /></a>
+	<{/if}>
+  -->
+	</span>
+	
+	<div class="question_page">
+	<{if $state==0}>
+		<{section name=i loop=$page}>
+			<a href="forum_problem.php?gid=<{$gid}>&cid=<{$cid}>&page=<{$page[i]}>"><{if $page[i]==$curr_page}><span id="curr_page"><{$page[i]}></span><{else}><{$page[i]}><{/if}></a>
+		<{/section}>
+	<{elseif $state==1}>
+		<{section name=i loop=$page}>
+			<a href="forum_problem.php?gid=<{$gid}>&cid=<{$cid}>&page=<{$page[i]}>"><{if $page[i]==$curr_page}><span id="curr_page"><{$page[i]}></span><{else}><{$page[i]}><{/if}></a>
+		<{/section}>
+		...<a href="forum_problem.php?gid=<{$gid}>&cid=<{$cid}>&page=<{$last_page}>">最終頁</a>
+	<{elseif $state==2}>
+		<a href="forum_problem.php?gid=<{$gid}>&cid=<{$cid}>&page=1">第一頁</a>...
+		<{section name=i loop=$page}>
+			<a href="forum_problem.php?gid=<{$gid}>&cid=<{$cid}>&page=<{$page[i]}>"><{if $page[i]==$curr_page}><span id="curr_page"><{$page[i]}></span><{else}><{$page[i]}><{/if}></a>
+		<{/section}>
+		...<a href="forum_problem.php?gid=<{$gid}>&cid=<{$cid}>&page=<{$last_page}>">最終頁</a>
+	<{else}>
+		<a href="forum_problem.php?gid=<{$gid}>&cid=<{$cid}>&page=1">第一頁</a>...
+		<{section name=i loop=$page}>
+			<a href="forum_problem.php?gid=<{$gid}>&cid=<{$cid}>&page=<{$page[i]}>"><{if $page[i]==$curr_page}><span id="curr_page"><{$page[i]}></span><{else}><{$page[i]}><{/if}></a>
+		<{/section}>
+	<{/if}>
+	</div>
+	<div style="padding-right:20px"><hr class="clear" /></div>
+	<div id="question">
+		<div id="question_left">
+			<div id="question_left_photo">
+				<div id="question_left_photo_inner"><img src="<{$currcfg.URL_ROOT_PATH}>/<{$forum_1D.head_image}>" alt="頭像" width="120" height="120" />
+				</div>
+			</div>
+			<span>暱稱：<{$forum_1D.nickname}></span><br />
+			<span>帳號：<{$forum_1D.username}></span><br />
+			<span>系所：<{$forum_1D.department}></span><br />
+			<span>發表時間：<br /><{$forum_1D.datatime}></span>
+		</div>
+		<div id="question_right_up">
+			<span><{if $cid==1}>[<{$forum_1D.category}>]<{/if}> <{$forum_1D.title}></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<span>
+				<{if $forum_1D.uid==$uid || $dep_admin=="true"}><span class="edit_button"><a href="forum_edit.php?gid=<{$forum_1D.gid}>">修改</a></span><{/if}>
+				<{if $dep_admin=="true"}>
+					<span class="delete_button"><a href="forum_delete_sql.php?gid=<{$gid}>&cid=<{$cid}>">刪除</a></span>
+                    <span class="place_top_button"><a href="forum_place_top.php?gid=<{$gid}>">置頂</a></span>
+				<{/if}>
+				<{if $admin=="true"}>
+					<span class="edit_button"><a href="forum_edit.php?gid=<{$forum_1D.gid}>">修改</a></span>
+					<span class="delete_button"><a href="forum_delete_sql.php?gid=<{$forum_1D.gid}>&grid=<{$forum_1D.grid}>&cid=<{$cid}>">刪除</a></span>
+					<span class="place_top_button"><a href="forum_place_top.php?gid=<{$gid}>">置頂</a></span>
+				<{/if}>
+			</span>
+		</div>
+		<div id="question_right_up_button">
+			<a href="<{$currcfg.URL_ROOT_PATH}>/module/personal/sendmail.php?what=<{$forum_1D.username}>"><img src="templates/zh_tw/images/mail.png" alt="寄信給他" /></a>
+		</div>
+		<div id="question_right_down">
+			<div id="question_right_down_content">
+				<{$forum_1D.content}>
+			</div>
+			
+		</div>
+	<!--	
+		<{if $cid!=4}>
+		<div id="question_right_down_button">
+			<a href="forum_ask.php?cid=<{$cid}>&grid=<{$gid}>"><img src="templates/zh_tw/images/response.png" alt="回覆" /></a>
+		</div>
+		<{/if}>
+    -->
+	</div>
+	<br class="clear" />
+	
+	
+	
+	<{section name=j loop=$forum_reply_2D}>
+	<div class="question_reply">
+		<div class="question_reply_left">
+			<div class="question_reply_left_photo">
+				<div id="question_left_photo_inner"><img src="<{$currcfg.URL_ROOT_PATH}>/<{$forum_reply_2D[j].head_image}>" alt="頭像" width="120" height="120" />
+				</div>
+			</div>
+			<span>暱稱：<{$forum_reply_2D[j].nickname}></span><br />
+			<span>帳號：<{$forum_reply_2D[j].username}></span><br />
+			<span>系所：<{$forum_reply_2D[j].department}></span><br />
+			<span>發表時間：<br /><{$forum_reply_2D[j].datatime}></span>
+		</div>
+		<div class="question_reply_right">
+		<br /><span style="float:right;padding-right:20px"><{$floor++}>F</span>
+			<div>
+				<{if $forum_reply_2D[j].uid==$uid || $dep_admin=="true"}><span class="edit_button"><a href="forum_edit.php?gid=<{$forum_reply_2D[j].gid}>">修改</a></span><{/if}>
+				<{if $dep_admin=="true"}>
+					<span class="delete_button"><a href="forum_delete_sql.php?gid=<{$forum_reply_2D[j].gid}>&grid=<{$forum_reply_2D[j].grid}>&cid=<{$cid}>">刪除</a></span>
+				<{/if}>
+				<{if $admin=="true"}>
+					<span class="edit_button"><a href="forum_edit.php?gid=<{$forum_reply_2D[j].gid}>">修改</a></span>
+					<span class="delete_button"><a href="forum_delete_sql.php?gid=<{$forum_reply_2D[j].gid}>&grid=<{$gid}>&cid=<{$cid}>">刪除</a></span>
+				<{/if}>
+			</div>
+			<div class="question_reply_right_content">
+				<{$forum_reply_2D[j].content}>
+			</div>
+		</div>
+	</div>
+	<{/section}>
+	<br class="clear"/>&nbsp;
+	<div style="padding-right:20px"><hr class="clear" /></div>
+	<div class="question_page">
+	<{if $state==0}>
+		<{section name=i loop=$page}>
+			<a href="forum_problem.php?gid=<{$gid}>&cid=<{$cid}>&page=<{$page[i]}>"><{if $page[i]==$curr_page}><span id="curr_page"><{$page[i]}></span><{else}><{$page[i]}><{/if}></a>
+		<{/section}>
+	<{elseif $state==1}>
+		<{section name=i loop=$page}>
+			<a href="forum_problem.php?gid=<{$gid}>&cid=<{$cid}>&page=<{$page[i]}>"><{if $page[i]==$curr_page}><span id="curr_page"><{$page[i]}></span><{else}><{$page[i]}><{/if}></a>
+		<{/section}>
+		...<a href="forum_problem.php?gid=<{$gid}>&cid=<{$cid}>&page=<{$last_page}>">最終頁</a>
+	<{elseif $state==2}>
+		<a href="forum_problem.php?gid=<{$gid}>&cid=<{$cid}>&page=1">第一頁</a>...
+		<{section name=i loop=$page}>
+			<a href="forum_problem.php?gid=<{$gid}>&cid=<{$cid}>&page=<{$page[i]}>"><{if $page[i]==$curr_page}><span id="curr_page"><{$page[i]}></span><{else}><{$page[i]}><{/if}></a>
+		<{/section}>
+		...<a href="forum_problem.php?gid=<{$gid}>&cid=<{$cid}>&page=<{$last_page}>">最終頁</a>
+	<{else}>
+		<a href="forum_problem.php?gid=<{$gid}>&cid=<{$cid}>&page=1">第一頁</a>...
+		<{section name=i loop=$page}>
+			<a href="forum_problem.php?gid=<{$gid}>&cid=<{$cid}>&page=<{$page[i]}>"><{if $page[i]==$curr_page}><span id="curr_page"><{$page[i]}></span><{else}><{$page[i]}><{/if}></a>
+		<{/section}>
+	<{/if}>
+	</div>
+</div>

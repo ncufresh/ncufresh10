@@ -1,0 +1,131 @@
+<div id="backgr">
+	<div id="event_list" >
+		<div id="new_thing">
+		</div>
+		<a id="p_up"><div id="up"></div></a>
+		<div id="list_no_up_and_down">
+   			<{section name=j loop=$block_var.info}>
+			<{if $block_var.dan[j] == 1}>
+	 			<div>
+	 				<span class="t<{$block_var.info[j].doc_id}>">
+	 					<{if $block_var.fin[j].is_finished == 1}>
+	 	 					<img id="<{$block_var.info[j].doc_id}>" src="<{$currcfg.URL_ROOT_PATH}>/module/register_wizard/templates/zh_tw/images/calender_nike.jpg" onclick="opt_change(<{$block_var.info[j].doc_id}>)">		
+						<{else}>
+		 					<img id="<{$block_var.info[j].doc_id}>" src="<{$currcfg.URL_ROOT_PATH}>/module/register_wizard/templates/zh_tw/images/calender_nike_empty.jpg" onclick="opt_change(<{$block_var.info[j].doc_id}>)"/>		
+						<{/if}>
+					</span>
+					<span>
+						<{if $block_var.beg[j] != $block_var.end[j]}>
+							<{$block_var.beg[j]}>~<{$block_var.end[j]}>
+						<{else}>
+							<{$block_var.beg[j]}>
+						<{/if}>
+					</span>
+					<br />
+		
+					<{if $block_var.dan[j] == 1}>
+						<span>
+							<a id="dan" href="<{$currcfg.URL_ROOT_PATH}>/module/register_wizard/opt_check.php?id=<{$block_var.info[j].doc_id}>"><{$block_var.info[j].doc_name}></a>
+						</span>
+					<{elseif $block_var.dan[j] == 0}>
+						<span>
+							<a id="safe" href="<{$currcfg.URL_ROOT_PATH}>/module/register_wizard/opt_check.php?id=<{$block_var.info[j].doc_id}>"><{$block_var.info[j].doc_name}></a>
+						</span>
+					<{elseif $block_var.dan[j] == 3}>
+						<span>
+							<a id="over" href="<{$currcfg.URL_ROOT_PATH}>/module/register_wizard/opt_check.php?id=<{$block_var.info[j].doc_id}>"><{$block_var.info[j].doc_name}></a>
+						</span>
+					<{else}>
+						<span>
+							<a id="normal" href="<{$currcfg.URL_ROOT_PATH}>/module/register_wizard/opt_check.php?id=<{$block_var.info[j].doc_id}>"><{$block_var.info[j].doc_name}></a>
+						</span>
+					<{/if}>
+				</div>
+			<{/if}>
+  			<{/section}>
+			<{section name=j loop=$block_var.info}>
+			<{if $block_var.dan[j] == 3}>
+	 			<div>
+	 				<span class="t<{$block_var.info[j].doc_id}>">
+	 					<{if $block_var.fin[j].is_finished == 1}>
+	 	 					<img id="<{$block_var.info[j].doc_id}>" src="<{$currcfg.URL_ROOT_PATH}>/module/register_wizard/templates/zh_tw/images/calender_nike.jpg" onclick="opt_change(<{$block_var.info[j].doc_id}>)">		
+						<{else}>
+		 					<img id="<{$block_var.info[j].doc_id}>" src="<{$currcfg.URL_ROOT_PATH}>/module/register_wizard/templates/zh_tw/images/calender_nike_empty.jpg" onclick="opt_change(<{$block_var.info[j].doc_id}>)"/>		
+						<{/if}>
+					</span>
+					<span>
+						<{if $block_var.beg[j] != $block_var.end[j]}>
+							<{$block_var.beg[j]}>~<{$block_var.end[j]}>
+						<{else}>
+							<{$block_var.beg[j]}>
+						<{/if}>
+					</span>
+					<br />
+		
+					<{if $block_var.dan[j] == 1}>
+						<span>
+							<a id="dan" href="<{$currcfg.URL_ROOT_PATH}>/module/register_wizard/opt_check.php?id=<{$block_var.info[j].doc_id}>"><{$block_var.info[j].doc_name}></a>
+						</span>
+					<{elseif $block_var.dan[j] == 0}>
+						<span>
+							<a id="safe" href="<{$currcfg.URL_ROOT_PATH}>/module/register_wizard/opt_check.php?id=<{$block_var.info[j].doc_id}>"><{$block_var.info[j].doc_name}></a>
+						</span>
+					<{elseif $block_var.dan[j] == 3}>
+						<span>
+							<a id="over" href="<{$currcfg.URL_ROOT_PATH}>/module/register_wizard/opt_check.php?id=<{$block_var.info[j].doc_id}>"><{$block_var.info[j].doc_name}></a>
+						</span>
+					<{else}>
+						<span>
+							<a id="normal" href="<{$currcfg.URL_ROOT_PATH}>/module/register_wizard/opt_check.php?id=<{$block_var.info[j].doc_id}>"><{$block_var.info[j].doc_name}></a>
+						</span>
+					<{/if}>
+				</div>
+			<{/if}>
+  			<{/section}>
+			<{section name=j loop=$block_var.info}>
+			<{if $block_var.dan[j] == 0 or $block_var.dan[j] == 2}>
+	 			<div>
+	 				<span class="t<{$block_var.info[j].doc_id}>">
+	 					<{if $block_var.fin[j].is_finished == 1}>
+	 	 					<img id="<{$block_var.info[j].doc_id}>" src="<{$currcfg.URL_ROOT_PATH}>/module/register_wizard/templates/zh_tw/images/calender_nike.jpg" onclick="opt_change(<{$block_var.info[j].doc_id}>)">		
+						<{else}>
+		 					<img id="<{$block_var.info[j].doc_id}>" src="<{$currcfg.URL_ROOT_PATH}>/module/register_wizard/templates/zh_tw/images/calender_nike_empty.jpg" onclick="opt_change(<{$block_var.info[j].doc_id}>)"/>		
+						<{/if}>
+					</span>
+					<span>
+						<{if $block_var.beg[j] != $block_var.end[j]}>
+							<{$block_var.beg[j]}>~<{$block_var.end[j]}>
+						<{else}>
+							<{$block_var.beg[j]}>
+						<{/if}>
+					</span>
+					<br />
+		
+					<{if $block_var.dan[j] == 1}>
+						<span>
+							<a id="dan" href="<{$currcfg.URL_ROOT_PATH}>/module/register_wizard/opt_check.php?id=<{$block_var.info[j].doc_id}>"><{$block_var.info[j].doc_name}></a>
+						</span>
+					<{elseif $block_var.dan[j] == 0}>
+						<span>
+							<a id="safe" href="<{$currcfg.URL_ROOT_PATH}>/module/register_wizard/opt_check.php?id=<{$block_var.info[j].doc_id}>"><{$block_var.info[j].doc_name}></a>
+						</span>
+					<{elseif $block_var.dan[j] == 3}>
+						<span>
+							<a id="over" href="<{$currcfg.URL_ROOT_PATH}>/module/register_wizard/opt_check.php?id=<{$block_var.info[j].doc_id}>"><{$block_var.info[j].doc_name}></a>
+						</span>
+					<{else}>
+						<span>
+							<a id="normal" href="<{$currcfg.URL_ROOT_PATH}>/module/register_wizard/opt_check.php?id=<{$block_var.info[j].doc_id}>"><{$block_var.info[j].doc_name}></a>
+						</span>
+					<{/if}>
+				</div>
+			<{/if}>
+  			<{/section}>
+ 		</div>
+		<a id="p_down"><div id="down"></div></a>
+
+		<div id="date">
+			<{$block_var.today}>
+		</div>
+	</div>
+</div>

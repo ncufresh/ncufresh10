@@ -1,0 +1,58 @@
+<div id="bread">
+	<div id="bread_image"><img src="templates/zh_tw/images/bread.png" /></div>
+	<div id="bread_text">
+		<a href="index.php" style="color:#333333">論壇專區</a>
+	</div>
+	<br class="clear"/>&nbsp;
+	<br class="clear"/>&nbsp;
+</div>
+<div>
+
+<a href="forum_list.php?cid=1&page=1"><div id="forum_total_left_freshask"></div></a>
+<div class="forum_total_right" >
+	<{section name=i loop=$fresh_ask_2D}>
+	<div <{if $fresh_ask_2D[i].place_top==1}> style="font-weight:bold;"<{/if}>>
+		<div class="ask_title_forum_index"><a href="forum_problem.php?gid=<{$fresh_ask_2D[i].gid}>&cid=<{$fresh_ask_2D[i].catid}>&page=1"><{if $fresh_ask_2D[i].place_top==1}>[置頂]<{/if}>[<{$fresh_ask_2D[i].category}>] <{$fresh_ask_2D[i].title}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by&nbsp;<{$fresh_ask_2D[i].nickname}></a></div><div class="ask_time_forum_index">發表時間：<{$fresh_ask_2D[i].datatime}></div>
+		<br class="clear" />
+	</div>
+	<{/section}>
+	<span class="more_link"><a href="forum_list.php?cid=1&page=1"><img src="templates/zh_tw/images/more.png" alt="more" /></a></span>
+</div>
+<br class="clear" />
+
+<a href="forum_list.php?cid=2&page=1"><div id="forum_total_left_club"></div></a>
+<div class="forum_total_right" >
+	<{section name=i loop=$club_2D}>
+	<div <{if $club_2D[i].place_top==1}> style="font-weight:bold;"<{/if}>>
+		<div class="ask_title_forum_index"><a href="forum_problem.php?gid=<{$club_2D[i].gid}>&cid=<{$club_2D[i].catid}>&page=1"><{if $club_2D[i].place_top==1}>[置頂]<{/if}><{$club_2D[i].title}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by&nbsp;<{$club_2D[i].nickname}></a></div><div class="ask_time_forum_index">發表時間：<{$club_2D[i].datatime}></div>
+		<br class="clear" />
+	</div>
+	<{/section}>
+	<span class="more_link"><a href="forum_list.php?cid=2&page=1"><img src="templates/zh_tw/images/more.png" alt="more" /></a></span>
+</div>
+<br class="clear" />
+
+<a href="dep_list.php"><div id="forum_total_left_dep"></div></a>
+<div class="forum_total_right" >
+	<{section name=i loop=$dep_2D}>
+	<div <{if $dep_2D[i].place_top==1}> style="font-weight:bold;"<{/if}>>
+		<div class="ask_title_forum_index"><a href="forum_problem.php?gid=<{$dep_2D[i].gid}>&cid=<{$dep_2D[i].catid}>&page=1"><{if $dep_2D[i].place_top==1}>[置頂]<{/if}>[<{$dep_2D[i].category}>] <{$dep_2D[i].title}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by&nbsp;<{$dep_2D[i].nickname}></a></div><div class="ask_time_forum_index">發表時間：<{$dep_2D[i].datatime}></div>
+		<br class="clear" />
+	</div>
+	<{/section}>
+	<span class="more_link"><a href="dep_list.php"><img src="templates/zh_tw/images/more.png" alt="more" /></a></span>
+</div>
+<br class="clear" />
+
+<a href="forum_list.php?cid=4&page=1"><div id="forum_total_left_imp"></div></a>
+<div class="forum_total_right" >
+	<{section name=i loop=$imp_2D}>
+	<div <{if $imp_2D[i].place_top==1}> style="font-weight:bold;"<{/if}>>
+		<div class="ask_title_forum_index"><a href="forum_problem.php?gid=<{$imp_2D[i].gid}>&cid=<{$imp_2D[i].catid}>&page=1"><{if $imp_2D[i].place_top==1}>[置頂]<{/if}> <{$imp_2D[i].title}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by&nbsp;<{$imp_2D[i].nickname}></a></div><div class="ask_time_forum_index">發表時間：<{$imp_2D[i].datatime}></div>
+		<br class="clear" />
+	</div>
+	<{/section}>
+	<span class="more_link"><a href="forum_list.php?cid=4&page=1"><img src="templates/zh_tw/images/more.png" alt="more" /></a></span>
+</div>
+<br class="clear" />
+</div>

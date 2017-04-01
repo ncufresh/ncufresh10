@@ -1,0 +1,78 @@
+.title{
+	display:none;	
+}
+.form_text{
+	padding:25px;
+	height:138px;
+	width:670px;
+	background-image:url('images/ncufreshQ.png');
+}
+.description{
+	text-align:right;
+}
+.questions{
+	padding-top:25px;
+	padding-bottom:10px;
+}
+.q_text_top{
+	background-image:url('images/subtop.png');
+	background-repeat:no-repeat;
+	height:39px;
+	width:666px;
+	padding-left:19px;
+	padding-right:50px;
+}
+.q_text_middle{
+	background-image:url('images/submiddle.png');
+	background-repeat:repeat-y;
+	width:666px;
+	/*padding-top:34px;*/
+	padding-left:19px;
+	padding-right:50px;
+}
+.q_text_bottom{
+	background-image:url('images/subbottom.png');
+	background-repeat:no-repeat;
+	height:34px;
+	width:666px;
+	padding-left:19px;
+	padding-right:50px;
+
+}
+.q_num{
+	font-weight:bold;
+	font-size:18px;	
+}
+.q_title{
+	font-weight:bold;
+	font-size:18px;	
+}
+.q_desc{
+	font-size:12px;
+	color:#888888;
+	margin-left:35px;
+}
+ul{
+	list-style-type:none;
+}
+.res_text,.res_area,.res_list{
+	margin-left:45px;
+}
+li,label{
+	font-family:"微軟正黑體";
+}
+.error{
+	background-color:yellow;
+	font-weight:bold;
+	font-family:"微軟正黑體";
+	width:105px;
+}
+.res_check .error,.res_radio .error{
+	margin-left:45px;
+}
+label.redstar{
+	color:red;
+}
+label.hidden{
+	display:hidden;
+}

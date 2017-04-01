@@ -1,0 +1,507 @@
+/*首頁的最新文章block*/
+#forum_main_block
+{
+	width: 370px;
+	height: auto;
+	padding-left:5px;
+}
+
+#forum_title_block{	width: 340px;	height: 31px;	padding: 30px 30px 0px 0px;	font-size: 12px;	text-align: right;	background-image: url(images/articles.png);}
+#forum_title_block a{color: #FFFFFF;}
+
+.forum_item_block
+{
+	width: 354px;
+	height: 16px;
+	padding: 4px 0px 4px 16px;
+	background: url(images/add.png) no-repeat left;
+	border-bottom: #999999 dashed 1px;
+}
+
+.forum_item_title
+{
+	width: 274px;
+	float: left;
+	display: block;
+}
+
+.forum_item_title a{	font-size: 12px;	color: #333333;}
+
+.forum_item_info_title
+{
+	width: 218px;
+	font-size: 12px;
+	color: #999999;
+	
+	display: block;
+	float: left;
+}
+.forum_item_info_author
+{
+	width: 127px;
+	font-size: 12px;
+	color: #999999;
+	
+	display: block;
+	float: right;
+}
+
+
+
+
+/*論壇CSS*/
+.ask_left
+{
+	width:100px;
+	float:left;
+}
+
+#forum_total_left_freshask		/*論壇總版左邊(新生問題)*/
+{
+	width:132px;
+	height:140px;
+	float:left;
+	background-image:url("images/totalc02.png");
+}
+#forum_total_left_club		/*論壇總版左邊(社團)*/
+{
+	width:132px;
+	height:140px;
+	float:left;
+	background-image:url("images/totalc04.png");
+}
+#forum_total_left_dep		/*論壇總版左邊(系所)*/
+{
+	width:132px;
+	height:140px;
+	float:left;
+	background-image:url("images/totalc03.png");
+}
+#forum_total_left_imp		/*論壇總版左邊(精華區)*/
+{
+	width:132px;
+	height:140px;
+	float:left;
+	background-image:url("images/totalc01.png");
+}
+
+.forum_total_right		/*論壇總版右邊(問題列表)*/
+{
+	width:536px;  /*原圖寬586px*/
+	height:110px; /*原圖高140px*/
+	float:left;
+	padding-top:30px;
+	padding-left:30px;
+	padding-right:20px;
+	background-image:url("images/totalblock.png");
+}
+
+
+.more_link    /*more...連結的樣式*/
+{
+	float:right;
+}
+
+#question	/*包住question_left、question_right、question_right_up_button、question_right_down_button四個div的外框div*/
+{
+	float:left;
+	width:731px;
+	height:250px;
+}
+#question_left   /*問題內 左邊區域 使用者資訊*/
+{
+	float:left;
+	width:148px;
+	height:227px;
+	background-image:url("images/blockleft.png");
+	padding-top:23px;
+	padding-left:19px;
+	font-size:14px;
+}
+#question_right_up   /*問題內 右邊區域 問題的標題*/
+{
+	float:left;
+	width:530px;
+	height:32px;
+	padding-top:30px;
+	padding-left:8px;
+	background-image:url("images/blocktitle.png");
+}
+#question_right_down   /*問題內 右邊區域 問題的內容*/
+{
+	float:left;
+	width:518px;
+	height:188px;
+	/*overflow:auto;*/
+	padding-right:20px;
+	background-image:url("images/blockcc.png");
+}
+#question_right_down_content	/*問題區的文字內容div*/
+{
+	width:510px;
+	height:150px;
+	margin-left:15px;
+	margin-top:15px;
+	overflow:auto;
+	float:left;
+    word-wrap:break-word;
+	word-break:break-all;  /*文字長度超過div不會超出去  會自動換行   IE有效而已*/
+}
+#question_right_up_button
+{
+	float:right;
+	height:115px;
+	width:26px;
+	padding-top:24px;
+}
+#question_right_down_button
+{
+	float:right;
+	height:97px;
+	width:26px;
+	height:118px;
+}
+.question_page   /*文章內的換頁頁碼*/
+{
+	float:right;
+	font-weight:bolder;
+	width:213px;
+	text-align:center;
+	padding-right:19px;
+	padding-top:10px;
+}
+#question_left_photo	/*問題左邊照片格子*/
+{
+	width:132px;
+	height:132px;
+	background-image:url("images/picout.png");
+}
+#question_left_photo_inner	/*問題左邊照片格子中的圖片*/
+{
+	width:120px;
+	height:120px;
+	padding-top:6px;
+	padding-left:6px;
+}
+
+.ask_img		/*文章列表中 發表文章的使用者的頭像*/
+{
+	float:left;
+	width:60px;
+	height:60px;
+}
+.ask_title		/*文章列表中 發表文章的標題*/
+{
+	float:left;
+	padding-top:20px;
+	padding-left:36px;
+}
+.ask_name		/*文章列表中 發表文章的人名*/
+{
+	width:86px;
+	float:right;
+	padding-right:14px;
+	padding-top:20px;
+	text-align:center;
+}
+.ask_reply_amount	/*回應數量*/
+{
+	float:right;
+	width:50px;
+	padding-top:20px;
+	padding-right:19px;
+	text-align:center;
+}
+.ask_time_forum_list		/*文章列表中 發表文章的時間*/
+{
+	float:right;
+	color:#00CCCC;
+	font-size:11px;
+	padding-right:12px;
+	padding-top:23px;
+}
+.ask_time_forum_index 		/*論壇分類中 發表文章的時間  firefox吃到而已*/
+{
+	float:right;
+	color:#00CCCC;
+	font-size:11px;
+	padding-right:25px;
+	padding-top:3px;
+}
+.ask_title_forum_index
+{
+	float:left;
+}
+
+#question_list
+{
+	width:700px;
+	float:left;
+}
+
+.single_question	/*問題文章列表的每一篇文章*/
+{
+	background-image:url("images/article.png");
+	width:662px;
+	height:78px;
+	padding-left:35px;
+	padding-top:18px;
+}
+
+.question_reply
+{
+	float:left;
+	width:674px;
+	height:262px;
+}
+.question_reply_left		/*進到問題裡面 的每個回覆的左邊 使用者訊息*/
+{
+	float:left;
+	width:150px;
+	height:242px;
+	background-image:url("images/reblockleft.png");
+	padding-left:21px;
+	padding-top:20px;
+	font-size:14px;
+}
+.question_reply_left_photo		/*回覆的左手邊使用者資訊的相片欄位的背景*/
+{
+	width:132px;
+	height:132px;
+	background-image:url("images/picout.png");
+}
+
+.question_reply_right		/*進到問題裡面 的每個回覆的右邊  回覆內容*/
+{
+	float:left;
+	width:503px;
+	height:262px;
+	/*overflow:auto;*/
+	word-break:break-all;  /*文字長度超過div不會超出去  會自動換行   IE才有效*/
+	background-image:url("images/reblockright.png");
+}
+.question_reply_right_content	/*回應區的文字內容div*/
+{
+	width:438px;
+	height:170px;
+	margin-left:27px;
+	margin-top:24px;
+	overflow:auto;
+	float:left;
+	word-break:break-all;  /*文字長度超過div不會超出去  會自動換行   IE有效而已*/
+}
+
+#forum_list_page_select_top		/*問題列表中  顯示在上面的分頁*/
+{
+	width:213px;
+	float:right;
+	padding-right:19px;
+	padding-top:10px;
+	text-align:center;
+	font-weight:bolder;
+	color:#FFFFFF;
+}
+#forum_list_page_select_top a	/*問題列表中  顯示在上面的分頁的連結部分*/
+{
+	color:#FFFFFF;
+}
+
+#forum_list_page_select_bot		/*問題列表中  顯示在下面的分頁*/
+{
+	width:213px;
+	float:right;
+	padding-right:19px;
+	padding-top:42px;
+	text-align:center;
+	font-weight:bolder;
+	color:#FFFFFF;
+}
+#forum_list_page_select_bot a	/*問題列表中  顯示在上面的分頁的連結部分*/
+{
+	color:#FFFFFF;
+}
+
+#forum_list_top_1		/*新生  問題列表的上面圖片  裡面有分頁*/
+{
+	width:697px;
+	height:70px;
+	background-image:url("images/ntop.png");
+}
+#forum_list_top_2		/*社團  問題列表的上面圖片  裡面有分頁*/
+{
+	width:697px;
+	height:70px;
+	background-image:url("images/cltop.png");
+}
+#forum_list_top_3		/*系所  問題列表的上面圖片  裡面有分頁*/
+{
+	width:697px;
+	height:70px;
+	background-image:url("images/ctop.png");
+}
+#forum_list_top_4		/*精華區  問題列表的上面圖片  裡面有分頁*/
+{
+	width:697px;
+	height:70px;
+	background-image:url("images/gtop.png");
+}
+#forum_list_bot_1		/*新生  問題列表的下面圖片  裡面有分頁*/
+{
+	width:697px;
+	height:70px;
+	background-image:url("images/nbot.png");
+}
+#forum_list_bot_2		/*社團   問題列表的下面圖片  裡面有分頁*/
+{
+	width:697px;
+	height:70px;
+	background-image:url("images/clbot.png");
+}
+#forum_list_bot_3		/*系所  問題列表的下面圖片  裡面有分頁*/
+{
+	width:697px;
+	height:70px;
+	background-image:url("images/cbot.png");
+}
+#forum_list_bot_4		/*精華區  問題列表的下面圖片  裡面有分頁*/
+{
+	width:697px;
+	height:70px;
+	background-image:url("images/gbot.png");
+}
+#forum_list_top_button	/*問題列表上面的按鈕*/
+{
+	padding-left:25px;
+	position:absolute;
+}
+
+#question_list_top_button
+{
+	padding-left:25px;
+}
+
+.edit_button
+{
+	font-weight:bold;
+}
+.delete_button
+{
+	font-weight:bold;
+}
+.place_top_button
+{
+	font-weight:bold;
+}
+
+#lang_dep
+{
+	float:left;
+	width:219px;
+	height:150px;
+	background-image:url("images/c.png");
+	padding-left:27px;
+	padding-top:60px;
+}
+#scie_dep
+{
+	float:left;
+	width:219px;
+	height:150px;
+	background-image:url("images/s.png");
+	padding-left:27px;
+	padding-top:60px;
+}
+#engi_dep
+{
+	float:left;
+	width:219px;
+	height:150px;
+	background-image:url("images/e.png");
+	padding-left:27px;
+	padding-top:60px;
+}
+#manage_dep
+{
+	float:left;
+	width:219px;
+	height:150px;
+	background-image:url("images/m.png");
+	padding-left:27px;
+	padding-top:60px;
+}
+#infor_dep
+{
+	float:left;
+	width:219px;
+	height:150px;
+	background-image:url("images/el.png");
+	padding-left:27px;
+	padding-top:60px;
+}
+#earth_dep
+{
+	float:left;
+	width:219px;
+	height:150px;
+	background-image:url("images/ea.png");
+	padding-left:27px;
+	padding-top:60px;
+}
+
+#forum_ask    /*發問頁面*/
+{
+	width:548px;
+	height:359px;
+	background-image:url("images/publicblock.png");
+	padding-top:46px;
+	padding-left:33px;
+}
+#forum_edit	/*修改頁面 基本上跟發問頁面一模一樣*/
+{
+	width:548px;
+	height:359px;
+	background-image:url("images/publicblock.png");
+	padding-top:46px;
+	padding-left:33px;
+}
+
+#ask_send    /*發問頁面的送出按鈕*/
+{
+	padding-left:407px;
+	/*position:absolute;
+	top:479px;*//*因為IE7會怪怪*/
+	padding-top:30px;
+}
+#ask_reset    /*發問頁面的重新填寫按鈕*/
+{
+	padding-left:407px;
+	/*position:absolute;
+	top:523px;*//*因為IE7會怪怪*/
+}
+
+#wrong_message		/*錯誤訊息*/
+{
+	font-weight:bolder;
+	color:#FF3300;
+}
+
+
+#curr_page	/*現在的頁數*/
+{
+	font-size:21px;
+	color:#333333;
+}
+
+#bread	/*麵包屑*/
+{
+	font-size:12px;
+}
+#bread_image
+{
+	float:left;
+}
+#bread_text
+{
+	float:left;
+	padding-left:7px;
+}

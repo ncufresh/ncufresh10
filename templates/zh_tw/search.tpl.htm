@@ -1,0 +1,8 @@
+<div style="width:614px">
+	<img src="<{$currcfg.URL_ROOT_PATH}>/templates/zh_tw/images/title.png" /><br /><br />
+	<{section name=i loop=$final_result}>
+		<img src="<{$currcfg.URL_ROOT_PATH}>/templates/zh_tw/images/ll.png" /><br /><br />
+		<a target="_blank" href="<{$final_result[i].r_url}>"><span class="search_page_title"><{$final_result[i].r_title}></span><br /><span class="search_page_content"><{$final_result[i].r_content}></span></a><br /><br />
+	<{/section}>
+	<img src="<{$currcfg.URL_ROOT_PATH}>/templates/zh_tw/images/ll.png" /><br /><br />&nbsp;
+</div>

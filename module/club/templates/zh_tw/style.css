@@ -1,0 +1,841 @@
+@charset "utf-8";
+/* CSS Document */
+
+/************/
+/*common css*/
+/************/
+
+/* a:link {text-decoration:none;}  */   /* unvisited link */
+/* a:visited {text-decoration:none;} */ /* visited link */
+/* a:hover {text-decoration:none;}  */  /* mouse over link */
+/* a:active {text-decoration:none;}  */ /* selected link */
+
+
+a.bread_css_1:link {text-decoration:none; color:#999999;}    /* unvisited link */
+a.bread_css_1:visited {text-decoration:none; color:#999999;} /* visited link */
+a.bread_css_1:hover {text-decoration:underline; color:#3399FF;}  /* mouse over link */
+a.bread_css_1:active {text-decoration:none;}   /* selected link */
+
+a.bread_css_2:link {text-decoration:none; color:#333333;}    /* unvisited link */
+a.bread_css_2:visited {text-decoration:none; color:#333333;} /* visited link */
+a.bread_css_2:hover {text-decoration:underline; color:#3399FF;}    /* mouse over link */
+a.bread_css_2:active {text-decoration:none;}   /* selected link */
+
+a.link_1:link {text-decoration:none; color:red;}    /* unvisited link */
+a.link_1:visited {text-decoration:none; color:red;} /* visited link */
+a.link_1:hover {text-decoration:underline;  color:blue;}   /* mouse over link */
+a.link_1:active {text-decoration:underline;}  /* selected link */
+
+a.images
+{
+	text-decoration:none;
+}
+
+.bread_link
+{
+	color:#999999;
+    padding-top:0px;
+    padding-left:7px;
+    float:left;
+}
+
+.bread_photo
+{
+    float:left;
+}
+
+
+
+#main_container_left_1
+{
+   height:20px;
+   font-size:12px;
+}
+
+#main_container_left_2
+{
+   height:25px;
+   font-size:12px;
+}
+#main_container_left_3
+{
+   height:10px;
+}
+
+#main_container_right
+{	
+   width: 750px;	
+   min-height: 200px;	
+   float: left;	
+   
+/*    padding: 20px 30px 5px 25px; 
+   border-style:solid;
+   border-width:5px; */
+}
+
+/* #main_container_right_contain
+{
+   font-size:12px;  
+   width: 700px;	
+   min-height: 200px;	
+   float: left;
+
+} */
+
+#main_container_right_footer
+{
+   height:90px;
+   width: 700px;	
+   float: left;
+   /*padding-bottom:8px;
+   padding-left:10px;
+   padding-right:10px;
+   padding-top:8px;
+   border-style:solid;
+   border-width:5px; */
+}
+
+ table
+{
+   border-collapse:hiden;
+   text-align:left;
+   width:715px;
+}
+
+table, td, th
+{
+   border:0px solid black;
+   text-align:left;
+   width:720px;
+   padding:5px;
+   font-weight:normal;
+} 
+
+b.title
+{
+font-weight:bold;
+}
+
+.intro
+{
+   padding-left:45px;
+}
+
+/*****************/
+/*index_style.css*/
+/*****************/
+
+#main_container_right_head
+{
+   font-size:12px;
+   height:12px;
+   padding-bottom:3px;
+   width: 700px;
+   /* padding-left:20px;
+   padding-right:14px;
+   padding-top:5px;
+   border-style:solid;
+   border-width:5px; */   
+}
+.index_main_container_right_contain_1
+{
+   float:left;
+   width:160px;
+   height:115px;
+   
+   padding-bottom:0px;
+   padding-left:30px;
+   padding-right:0px;
+   padding-top:15px;
+   /*    border-style:solid;
+   border-width:5px; */
+}
+
+
+/*************************/
+/*club_learning_style.css*/
+/*************************/
+#club_learning_main_container_right_top
+{
+   font-size:16px; 
+   height:80px;
+   width: 750px;
+   background-image:url('images/studymenu_head.jpg');
+   background-repeat: no-repeat;
+   margin:0px 0px 0px;
+}
+
+p.club_learning
+{
+   padding-left:100px;
+   padding-top:35px;
+   font-size:20px;
+}
+
+#club_learning_main_container_right_contain
+{
+   font-size:12px;  
+   width: 710px;	
+   min-height: 250px;	
+   float: left;
+   background-image:url('images/studymenu_back.png');
+   background-repeat: no-repeat;
+   background-position: right bottom;
+   margin:10px 0px 5px 0px;
+  /* padding-bottom:10px;
+   padding-left:10px;
+   padding-right:20px;
+   padding-top:10px;   */
+}
+
+.club_learning_main_container_right_contain_1
+{
+   display:block;
+  float:left;
+  font-size:15px;
+  height:15px;
+  padding-bottom:0;
+  padding-left:10px;
+  padding-right:0;
+  padding-top:15px;
+  width:90px;
+}
+
+.club_learning_main_container_right_contain_2
+{
+  display:block;
+  float:left;
+  font-size:15px;
+  height:15px;
+  padding-bottom:0;
+  padding-left:25px;
+  padding-right:0;
+  padding-top:15px;
+  width:165px;
+}
+
+.club_learning_main_container_right_contain_3
+{ 
+  display:block;
+  float:left;
+  font-size:15px;
+  height:15px;
+  padding-bottom:0;
+  padding-left:30px;
+  padding-right:0;
+  padding-top:15px;
+  width:90px;
+}
+
+/*********************/
+/*club_play_style.css*/
+/*********************/
+
+
+#club_play_main_container_right_top
+{
+   font-size:16px; 
+   height:63px;
+   width: 750px;
+   background-image:url(images/happymenu_head.jpg);
+   background-repeat: no-repeat;
+} 
+
+#club_play_main_container_right_contain
+{
+   font-size:12px;  
+   width: 700px;	
+   min-height: 250px;	
+   float: left;
+   background-image:url(images/happymenu_back.png);
+   background-repeat: no-repeat;
+   background-position: right bottom;
+
+}
+
+.club_play_main_container_right_contain_1
+{
+   display:block;
+   float:left;
+   font-size:15px;
+   height:15px;
+   padding-bottom:0;
+   padding-left:15px;
+   padding-right:0;
+   padding-top:5px;
+   width:90px;
+}
+
+.club_play_main_container_right_contain_2
+{
+  display:block;
+  float:left;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:15px;
+  width:750px;
+  font-size:15px;
+}
+
+.club_play_main_container_right_contain_3
+{
+  display:block;
+  float:left;
+  font-size:15px;
+  padding-left:25px;
+  padding-right:0;
+  padding-top:5px;
+  width:135px;
+}
+
+p.club_play
+{
+   padding-left:100px;
+   padding-top:25px;
+   font-size:20px;
+}
+
+
+/************************/
+/*club_service_style.css*/
+/************************/
+
+#club_service_main_container_right_top
+{
+   font-size:16px; 
+   height:80px;
+   width: 700px;
+   background-image:url(images/servemenu_head.jpg);
+   background-repeat: no-repeat;
+} 
+
+#club_service_main_container_right_contain
+{
+   font-size:12px;  
+   width: 700px;	
+   min-height: 250px;	
+   float: left;
+   background-image:url(images/servemenu_back.png);
+   background-repeat: no-repeat;
+   background-position: right bottom;
+
+}
+
+.club_service_main_container_right_contain_1
+{
+  display:block;
+  float:left;
+  height:15px;
+  padding-bottom:0;
+  padding-left:15px;
+  padding-right:0;
+  padding-top:20px;
+  width:85px;
+  font-size:15px;
+
+}
+
+.club_service_main_container_right_contain_2
+{
+  display:block;
+  float:left;
+  height:20px;
+  padding-bottom:0;
+  padding-left:15px;
+  padding-right:35px;
+  padding-top:20px;
+  width:420px;
+  font-size:15px;
+}
+
+p.club_service
+{
+   padding-left:100px;
+   padding-top:25px;
+   font-size:20px;
+}
+
+
+
+/***********************/
+/*club_social_style.css*/
+/***********************/
+
+
+#club_social_main_container_right_top
+{
+   font-size:16px; 
+   height:63px;
+   width: 700px;
+   background-image:url(images/friendmenu_head.jpg);
+   background-repeat: no-repeat;
+} 
+
+#club_social_main_container_right_contain
+{
+   font-size:12px;  
+   width: 700px;	
+   min-height: 250px;	
+   float: left;
+   background-image:url(images/friendmenu_back.png);
+   background-repeat: no-repeat;
+   background-position: right bottom;
+
+}
+
+.club_social_main_container_right_contain_1
+{
+  display:block;
+  float:left;
+  font-size:15px;
+  height:15px;
+  padding-top:15px;
+  width:95px;
+}
+
+.club_social_main_container_right_contain_2
+{ 
+  display:block;
+  float:left;
+  font-size:15px;
+  padding-left:0;
+  padding-right:20px;
+  padding-top:15px;
+  width:250px;
+}
+
+.club_social_main_container_right_contain_3
+{
+  display:block;
+  float:left;
+  font-size:15px;
+  padding-left:25px;
+  padding-right:0;
+  padding-top:14px;
+  width:150px;
+}
+.club_social_main_container_right_contain_4
+{
+  display:block;
+  float:left;
+  font-size:15px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:5px;
+  width:750px;
+}
+p.club_social
+{
+   padding-left:100px;
+   padding-top:25px;
+   font-size:20px; 
+}
+
+
+/****************************/
+/*club_studentelse_style.css*/
+/****************************/
+
+#club_studentelse_main_container_right_top
+{
+   font-size:16px; 
+   height:63px;
+   width: 700px;
+   background-image:url(images/studentmenu_head.jpg);
+   background-repeat: no-repeat;
+} 
+
+#club_studentelse_main_container_right_contain
+{
+   font-size:12px;  
+   width: 700px;	
+   min-height: 250px;	
+   float: left;
+   background-image:url(images/studentmenu_back.png);
+   background-repeat: no-repeat;
+   background-position: right bottom;
+
+}
+
+.club_studentelse_main_container_right_contain_1
+{
+   float:left;
+   width:110px;
+   height:15px;
+
+   padding-bottom:0px;
+   padding-left:30px;
+   padding-right:0px;
+   padding-top:15px;
+   position:absolute;
+   display: block;
+   font-size:15px;
+
+}
+
+p.club_studentelse
+{
+  font-size:20px;
+  padding-left:85px;
+  padding-top:25px;
+}
+
+/* p.club_learning
+{
+   padding-left:100px;
+   padding-top:35px;
+   font-size:20px;
+} */
+
+/******************************/
+/*club_studentDepart_style.css*/
+/******************************/
+
+
+#club_studentDepart_main_container_right_top
+{
+   font-size:16px; 
+   height:63px;
+   width: 750px;
+   background-image:url(images/departmentmenu_head.jpg);
+   background-repeat: no-repeat;
+} 
+
+#club_studentDepart_main_container_right_contain
+{ 
+   width: 705px;	
+   min-height: 250px;	
+   float: left;
+   background-image:url(images/departmentmenu_back.png);
+   background-repeat: no-repeat;
+   background-position: right bottom;
+}
+
+.club_studentDepart_main_container_right_contain_1
+{
+  display:block;
+  float:left;
+  height:30px;
+  padding-left:10px;
+  padding-top:15px;
+  width:115px;
+}
+
+.club_studentDepart_main_container_right_contain_2
+{
+  display:block;
+  float:left;
+  font-size:15px;
+  height:30px;
+  padding-bottom:0;
+  padding-left:20px;
+  padding-right:0;
+  padding-top:20px;
+  width:160px;
+}
+.club_studentDepart_main_container_right_contain_3
+{  
+  display:block;
+  float:left;
+  font-size:15px;
+  height:30px;
+  padding-bottom:0;
+  padding-left:145px;
+  padding-right:0;
+  padding-top:5px;
+  width:150px;
+}
+
+.club_studentDepart_main_container_right_contain_4
+{  
+   display:block;
+  float:left;
+  font-size:15px;
+  height:30px;
+  padding-bottom:0;
+  padding-left:30px;
+  padding-right:35px;
+  padding-top:5px;
+  width:115px;
+}
+
+.club_studentDepart_main_container_right_contain_5
+{  
+  display:block;
+  float:left;
+  font-size:15px;
+  height:30px;
+  padding-bottom:0;
+  padding-left:145px;
+  padding-right:0;
+  padding-top:5px;
+  width:500px;
+}
+
+.club_studentDepart_main_container_right_contain_6
+{  
+  display:block;
+  float:left;
+  font-size:15px;
+  height:30px;
+  padding-bottom:0;
+  padding-left:30px;
+  padding-right:0;
+  padding-top:5px;
+  width:180px;
+}
+
+.club_studentDepart_main_container_right_contain_7
+{  
+  display:block;
+  float:left;
+  font-size:15px;
+  height:30px;
+  padding-bottom:0;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:20px;
+  width:180px;
+}
+
+p.club_studentDepart
+{
+   padding-left:120px;
+   padding-top:25px;
+   font-size:20px;
+}
+
+
+/****************************************************************************************************************/
+
+
+
+  
+a.email_css
+{
+	text-decoration:none;
+    color:#00cc33;
+}
+ 
+
+
+#top_1
+{
+   padding-top:5px;
+   padding-bottom:5px;
+   height:20px;
+   width:750px;
+   font-size:12px;
+}
+
+#top_2
+{
+   padding-top:5px;
+   padding-bottom:5px;
+   height:20px;
+   width:750px;
+   font-size:12px;
+}
+
+#top_3
+{
+   padding-top:5px;
+   padding-bottom:5px;
+   height:20px;
+   width:750px;
+   font-size:12px;
+}
+
+#top_4
+{
+   padding-top:5px;
+   padding-bottom:5px;
+   height:20px;
+   width:750px;
+   font-size:12px;
+}
+
+#top_5
+{
+   padding-top:5px;
+   padding-bottom:5px;
+   height:20px;
+   width:750px;
+   font-size:12px;
+}
+
+#top_6
+{
+   padding-top:5px;
+   padding-bottom:5px;
+   height:20px;
+   width:750px;
+   font-size:12px;
+}
+
+#title_1
+{
+   font-size:16px; 
+   height:85px;
+   width: 750px;
+   background-image:url('images/studymenu_head.jpg');
+   background-repeat: no-repeat;
+}
+
+#title_2
+{
+   font-size:16px; 
+   height:80px;
+   width: 750px;
+   background-image:url('images/happymenu_head.jpg');
+   background-repeat: no-repeat;
+}
+
+#title_3
+{
+   font-size:16px; 
+   height:80px;
+   width: 750px;
+   background-image:url('images/servemenu_head.jpg');
+   background-repeat: no-repeat;
+}
+
+#title_4
+{
+   font-size:16px; 
+   height:80px;
+   width: 750px;
+   background-image:url('images/friendmenu_head.jpg');
+   background-repeat: no-repeat;
+}
+
+#title_5
+{
+   font-size:16px; 
+   height:80px;
+   width: 700px;
+   background-image:url('images/studentmenu_head.jpg');
+   background-repeat: no-repeat;
+}
+
+#title_6
+{
+   font-size:16px; 
+   height:80px;
+   width: 700px;
+   background-image:url('images/departmentmenu_head.jpg');
+   background-repeat: no-repeat;
+}
+
+#footer_1
+{
+   height:90px;
+   width: 750px;	
+   float: left;
+   background-image:url('images/studymenu_bottom.png');
+   background-repeat: no-repeat;
+   /*padding-bottom:8px;
+   padding-left:10px;
+   padding-right:10px;
+   padding-top:8px;
+   border-style:solid;
+   border-width:5px; */
+}
+
+#footer_2
+{
+   height:90px;
+   width: 750px;	
+   float: left;
+   background-image:url('images/happymenu_bottom.png');
+   background-repeat: no-repeat;
+   /*padding-bottom:8px;
+   padding-left:10px;
+   padding-right:10px;
+   padding-top:8px;
+   border-style:solid;
+   border-width:5px; */
+}
+
+#footer_3
+{
+   height:90px;
+   width: 750px;	
+   float: left;
+   background-image:url('images/servemenu_bottom.png');
+   background-repeat: no-repeat;
+   /*padding-bottom:8px;
+   padding-left:10px;
+   padding-right:10px;
+   padding-top:8px;
+   border-style:solid;
+   border-width:5px; */
+}
+
+#footer_4
+{
+   height:90px;
+   width: 750px;	
+   float: left;
+   background-image:url('images/friendmenu_bottom.png');
+   background-repeat: no-repeat;
+   /*padding-bottom:8px;
+   padding-left:10px;
+   padding-right:10px;
+   padding-top:8px;
+   border-style:solid;
+   border-width:5px; */
+}
+
+#footer_5
+{
+   height:90px;
+   width: 750px;	
+   float: left;
+   background-image:url('images/studentmenu_bottom.png');
+   background-repeat: no-repeat;
+   /*padding-bottom:8px;
+   padding-left:10px;
+   padding-right:10px;
+   padding-top:8px;
+   border-style:solid;
+   border-width:5px; */
+}
+
+#footer_6
+{
+   height:90px;
+   width: 750px;	
+   float: left;
+   background-image:url('images/departmentmenu_bottom.png');
+   background-repeat: no-repeat;
+   /*padding-bottom:8px;
+   padding-left:10px;
+   padding-right:10px;
+   padding-top:8px;
+   border-style:solid;
+   border-width:5px; */
+}
+
+#content
+{
+   width: 750px;	
+   min-height: 200px;	
+   float: left;	
+}
+
+#club
+{
+   padding-top:25px;
+   text-align:center;
+   padding-left:0px;
+   width:300px;
+}
+
+#club_1
+{
+   padding-top:35px;
+   text-align:center;
+   padding-left:0px;
+   width:295px;
+}

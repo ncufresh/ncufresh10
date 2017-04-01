@@ -1,0 +1,98 @@
+#form_title_text{
+	width:647px;
+	font-weight:normal;
+	color:#666666;
+
+}
+#form_desc_text{
+	width:647px;
+	font-weight:normal;
+	color:#666666;
+}
+
+.txtbar{
+	margin-bottom:25px;
+}
+.text{
+	padding-top:10px;
+	font-weight:bold;
+	font-size:20px;
+}
+
+.question{
+	padding-top:25px;
+	padding-bottom:25px;
+	margin-right:100px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.onShow:hover{
+	background-color:#c0f5fe;
+}
+
+.onEdit{
+	background-color:#abe5f0;
+}
+
+.toolbar{
+	text-align:right;
+	margin-right:100px;
+	padding-top:10px;
+	padding-right:50px;
+}
+#saveMsg{
+	
+}
+.editTool{
+	float:right;
+}
+
+.editTool img:hover{
+	background-color:#b4c3b4;
+	cursor:pointer;
+}
+.editTool img{
+	height:30px;
+}
+.q_title_label{
+	font-weight:bold;
+}
+.q_desc_label{
+	color:#888888;
+	font-size:12px;
+}
+img.delOpt{
+	height:18px;
+}
+img.delOpt:hover{
+	background-color:#b4c3b4;
+	cursor:pointer;
+}
+img.delOtherOpt{
+	height:18px;
+}
+img.delOtherOpt:hover{
+	background-color:#b4c3b4;
+	cursor:pointer;
+}
+.addOtherOpt{
+	color:blue;
+}
+.addOtherOpt:hover{
+	text-decoration:underline;
+	cursor:pointer;
+}
+button{
+	cursor:pointer;
+}
+ul{
+	list-style-type:none;
+}
+label.redstar{
+	color:red;
+}
+
+.disabled input{
+	background-color:#a9a9a9;
+}

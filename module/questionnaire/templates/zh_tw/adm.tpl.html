@@ -1,0 +1,20 @@
+<div>
+<p>點選下列問卷編輯或是<a id="new" href="new.php">新增一份問卷</a></p>
+
+<table><tbody>
+<tr>
+	<th>問卷標題</th>
+	<th>問卷描述</th>
+	<th>刪除</th>
+	<th>編輯</th>
+</tr>
+<{section name=i loop=$qform}>
+<tr>
+	<td><{$qform[i].title}></td>
+	<td><{$qform[i].description}></td>
+	<td class="tool"><a href="delete.php?qid=<{$qform[i].qid}>"><img class="delForm" src="templates/zh_tw/images/X.png" alt="刪除" title="刪除" /></a></td>
+	<td class="tool"><a href="edit.php?qid=<{$qform[i].qid}>"><img class="editForm" src="templates/zh_tw/images/pen.png" alt="編輯" title="編輯" /></a></td>
+</tr>
+<{/section}>
+</tbody></table>
+</div>

@@ -1,0 +1,84 @@
+#film_list
+{
+	width: 732px;
+	height: 109px;
+	font-size: 12px;
+	background-image:url("images/choose_back.jpg");
+	overflow: hidden;
+	float:left;
+}
+#film_queue
+{
+	width: 632px;
+	height: 109px;
+	font-size: 12px;
+	overflow: hidden;
+	float: left;
+	white-space:nowrap;
+	padding-top:9px;
+}
+
+#film_list_left
+{
+	float:left;
+	margin-top:9px;
+	background-image:url("images/left.jpg");
+	width:50px;
+	height:91px;
+}
+#film_list_left:hover
+{
+	/*float:left;
+	margin-top:9px;  ·|Ä~©Ó*/
+	background-image:url("images/left2.jpg");
+}
+
+#film_list_right
+{
+	float:left;
+	margin-top:9px;
+	background-image:url("images/right.jpg");
+	width:50px;
+	height:91px;
+}
+#film_list_right:hover
+{
+	background-image:url("images/right2.jpg");
+}
+
+#film_show_bg
+{
+	float:left;
+	width:732px;
+	height:681px;
+	background-image:url("images/background.jpg");
+}
+#film_show
+{
+	padding-top:139px;
+	padding-left:124px;
+}
+#description
+{
+	/*position:absolute;
+	top:880px;
+	padding-left:93px;
+	width:527px;
+	height:74px;*/
+	width:486px;
+	padding-left:122px;
+	padding-top:43px;
+}
+.film
+{
+}
+#film_title
+{
+	position:absolute;
+	top:359px;
+	padding-left:210px;
+	width:200px;
+	height:40px;
+	font-weight:bold;
+	
+}

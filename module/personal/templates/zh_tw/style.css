@@ -1,0 +1,337 @@
+.right
+{
+	
+}
+.back
+{
+   float:left;
+   background-image:url('images/data/blocktd.png');	
+   background-repeat:repeat-y;
+   width:724px;
+}
+.head_i
+{
+   float:left;
+   width:150px;	
+   height:460px;
+}
+.q
+{
+   padding-top:5px;
+   height:24px;
+   float:left;
+   width:120px;	
+}
+.form
+{
+   padding-top:5px;
+   height:24px;
+   float:left;
+   width:400px;	
+}
+.text
+{
+   width:724px;
+   padding-top:20px;
+   float:left;
+   padding-left:30px;
+   height:555px;
+}
+.footer
+{
+   float:left;
+   background-image:url('images/data/blockbut.png');
+   background-repeat:no-repeat;
+   height:208px;
+   width:724px;
+}
+.area
+{
+  width:535px;
+  float:left;
+}
+
+.star
+{
+   padding-top:5px;
+   height:24px;
+   float:left;
+   font-size:20px;
+   color:red;
+}
+.q_intro
+{
+   padding-top:5px;
+   height:105px;
+   float:left;
+   width:120px;		
+}
+.form_intro
+{
+   padding-top:5px;
+   height:105px;
+   float:left;
+   width:400px;	
+}
+.button_2
+{
+   float:left;	
+   padding-top:20px;
+}
+.button_1
+{
+    float:left;
+   	margin-left:115px;
+    padding-top:20px;
+}
+.button_1 input
+{
+	border: 0px;
+}
+.button_2 input
+{
+	border: 0px;
+}
+.num
+{
+   width:320px;
+   float:left;
+   padding-top:5px;
+   margin-left:120px;
+   height:35px;	
+}
+.clear
+{
+   width:81px;
+   height:35px;
+   background-image:url('images/data/cl.png');
+   background-repeat:no-repeat;
+}
+.must
+{
+   padding-left:180px;	
+}
+.top
+{
+   float:left;
+   background-image:url('images/data/blocktdt.png');
+   background-repeat:no-repeat;
+   height:20px;
+   width:724px;
+}
+.passwd
+{
+   padding-top:5px;
+   height:24px;
+   float:left;
+   font-size:20px;
+   color:red;
+   width:530px; 	
+}
+/* 上面是個資*/
+
+
+.m_back
+{
+   margin-left:30px;
+   width:606px;	
+   background-color:#FF0000;
+   background-image:url('images/mailbox/line.png');
+   background-repeat:repeat-y;
+   min-height:350px;
+}
+.m_point
+{
+   margin-left:30px;	
+}
+.m_up
+{
+   padding-left:100px;
+   height:60px;
+}
+.in_frog
+{
+    position:absolute;
+	margin-left:22px;
+	margin-top:-47px;
+
+}
+#frog
+{
+   width:151px;
+   height:51px;
+   background-image:url('images/mailbox/notreadn.png');	
+}
+.mailtop
+{
+   padding-top:4px;
+   padding-left:10px;
+   wigth:600px;
+   height:30px;	
+}
+.mail_title
+{
+   width:366px;
+   height:22px;	
+   float:left;
+}
+.mail_title a:hover{color:#333333;}
+.mail_pe
+{
+   width:87px;
+   height:22px;	
+   padding-left:10px;
+   padding-top:1px;
+   float:left;
+   color:#000033;
+}
+.mail_date
+{
+   padding-top:1px;
+   width:87px;
+   height:22px;	
+   padding-left:10px;
+   float:left;	
+}
+.mail_de
+{
+   padding-top:1px;
+   height:22px;	
+   padding-left:3px;
+   float:left;	
+}
+.mail_show
+{
+   padding-left:13px;	
+   padding-top:5px;
+}
+.m_c_sub
+{
+   padding-top:3px;
+   float:left;
+   width:100px;	
+}
+.m_down
+{
+ 	
+}
+.m_c_con
+{
+   padding-top:3px;
+   float:left;
+   width:480px;
+   word-wrap:break-word;
+}
+.m_c_back
+{
+	display:inline-block;
+	height:27px;
+	margin-bottom:3px;
+	padding-left:400px;
+}
+/* 上面是未讀訊息 */
+
+.s_area
+{
+   width:606px;
+   padding-left:30px;
+   padding-top:20px;	
+}
+.s_q
+{
+   padding-top:5px;
+   height:24px;
+   width:150px;	
+}
+/*.s_form
+{
+   padding-left:500px;
+   height:20px;
+   width:92px;	
+}*/
+.s_text
+{
+	float:left;
+	width:150px;
+}
+.s_form
+{
+   padding-top:5px;
+   width:300px;	
+}
+.s_right
+{
+   float:left;
+   width:300px;		
+}
+.s_q_content
+{
+   padding-top:5px;
+   height:112px;
+   width:150px;		
+}
+.s_form_contnet
+{
+   padding-top:5px;
+   height:106px;
+   width:150px;		
+}
+.s_send
+{
+   height:36px;
+   padding-top:15px;	
+}
+.s_clear
+{
+   float:left;
+   width:101px;
+   height:36px;
+   background-image:url('images/mailbox/cl.png');
+   background-repeat:no-repeat;
+}
+.s_send input
+{
+	border: 0px;
+}
+/* 上面是寄件區 */
+.p_back
+{
+   float:left;
+   background-image:url('images/data/blocktd.png');	
+   background-repeat:repeat-y;
+   width:724px;
+   min-height:300px;
+}
+.p_text
+{
+   padding-top:30px;
+   padding-left:40px;	
+}
+.p_right
+{
+   float:left;
+   line-height:30px;
+   width:300px;	
+}
+.p_left
+{
+   float:left;
+   line-height:30px;
+   width:90px;
+   padding-left:15px;
+}
+.p_head
+{
+   text-align:center;
+   float:left;
+   width:174px;
+   height:300px;
+}
+.p_footer
+{
+   float:left;
+   background-image:url('images/data/blockbut.png');
+   background-repeat:no-repeat;
+   height:208px;
+   width:724px;	
+}

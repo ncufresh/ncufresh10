@@ -1,0 +1,184 @@
+#top{
+
+}
+.tree
+{
+	background:url('images/detail_food_head.png') no-repeat;
+	width:659px;
+	height:63px;
+	padding-left:45px;
+	padding-top:5px;
+}
+.tree1
+{
+	background: url('images/detail_living_head.png') no-repeat;
+	width:659px;
+	height:63px;
+	padding-left:45px;
+	padding-top:5px;
+}
+.tree2
+{
+	background:url('images/detail_traffic_head.png') no-repeat;
+	width:659px;
+	height:63px;
+	padding-left:45px;
+	padding-top:5px;
+}
+.tree3
+{
+	background:url('images/detail_life_head.png') no-repeat;
+	width:659px;
+	height:63px;
+	padding-left:45px;
+	padding-top:5px;
+}
+.tree4
+{
+	background:url('images/detail_health_head.png') no-repeat;
+	width:659px;
+	height:63px;
+	padding-left:45px;
+	padding-top:5px;
+}
+.tree5
+{
+	background:url('images/detail_sport_head.png') no-repeat;
+	width:659px;
+	height:63px;
+	padding-left:45px;
+	padding-top:5px;
+}
+#tree2
+{
+min-width:472px;
+min-height:49px;
+margin-top:5px;
+margin-left:45px;
+position:absolute;
+}
+#bar1
+{
+}
+#middle
+{
+	width:650px;
+	min-height:320px;
+}
+#link
+{
+font-size:12px;
+}
+#bottom
+{
+
+}
+#heading
+{
+	margin-top:30px;
+	margin-bottom:10px;
+	font-size:20px;
+	font-family:微軟正黑體;
+	font-weight:bold;
+}
+p
+{
+	padding-left:45px;
+	font-size:16px;
+	font-family:Arial, Helvetica, sans-serif;
+	width:600px;
+}
+h3
+{
+	padding-left:45px;
+	font-size:16px;
+	font-family:微軟正黑體;
+	font-weight:bold;
+}
+h
+{
+	padding-left:45px;
+	font-size:16px;
+	font-family:微軟正黑體;
+	font-weight:bold;
+}
+h1
+{
+	margin-top:25px;
+	margin-bottom:5px;
+	padding-left:40px;
+	font-size:18px;
+	font-family:微軟正黑體;
+	font-weight:bold;
+	color:red;
+}
+h2
+{
+	margin-top:10px;
+	margin-bottom:10px;
+	padding-left:45px;
+	font-size:16px;
+	font-family:微軟正黑體;
+	font-weight:bold;
+}
+#p1
+{
+	font-size:16px;
+	font-family:微軟正黑體;	
+}
+.p3
+{
+	padding-left:70px;
+	margin-top:10px;
+	margin-bottom:10px;
+	font-size:16px;
+	font-family:微軟正黑體;	
+}
+.p2
+{
+	font-size:16px;
+	font-family:微軟正黑體;
+	margin-left:125px;
+}
+.p3
+{
+	font-size:16px;
+	font-family:微軟正黑體;
+	margin-left:55px;
+}
+.image1
+{
+	margin-left:45px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.image2
+{
+	margin-left:45px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.image3
+{
+	margin-left:45px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.image4
+{
+	float:left;
+	margin-left:410px;
+	margin-bottom:50px;
+}
+#next
+{
+	float:left;
+}
+
+.p4
+{
+	margin-left:115px;
+}
+a.href:hover{color:#0000FF;} 
+a.href{color:#FF0000;} 
+

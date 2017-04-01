@@ -1,0 +1,78 @@
+<div>
+
+<div id="calender_all">
+	<div id="calender_index_top">
+		<{section name=i loop=$document}>
+			<{if $document[i].doc_id == $did}>
+				<div id="title">
+					<{$document[i].doc_name}>
+				</div>
+				<{if $currmodule->is_admin($curruser->uid)}>
+					<div id="edit_del">
+						<a href="edit_or_del.php?msg=edit&did=<{$did}>">修改</a>
+						<a href="edit_or_del.php?msg=del&did=<{$did}>">刪除</a> 
+					</div>
+				<{/if}>
+			<{/if}>
+		<{/section}>
+	</div>
+	<div id="calender_index_mid"> 
+		<{section name=i loop=$document}>  
+			<{if $document[i].doc_id == $did}>
+				<div id="content">
+					<{$document[i].doc_content}>
+				</div>
+			<{/if}>
+		<{/section}>	
+	</div>					
+	<div id="calender_index_buttom">
+		<div id="status">
+			<{if $curruser->is_guest()}>
+				狀態：<span>請先登入</span>
+				<div id="buttom_block"></div>
+			<{else}>
+				<{if $check == 1 and $check_end == 1}>
+					<{if $finish[0].is_finished == 1}>
+						狀態：<span id="safed">完成</span>
+						<a href="user_finish_del.php?uid=<{$curruser->uid}>&did=<{$did}>">
+							<div id="del_fin"></div>
+						</a>
+					<{else}>
+						狀態：<span id="dan">未完成</span>
+						<a href="user_finish_save.php?uid=<{$curruser->uid}>&did=<{$did}>">
+							<div id="fin"></div>
+						</a>
+					<{/if}>
+				<{else}>
+					<{if $check_end == 0}>
+						<{if $finish[0].is_finished == 1}>
+							狀態：<span id="safed">完成</span>
+							<div id="buttom_block"></div>
+						<{else}>
+							狀態：過期
+							<div id="buttom_block"></div>
+						<{/if}>
+					<{else}>
+						狀態：時間未到
+						<div id="buttom_block"></div>
+					<{/if}>
+				<{/if}>
+			<{/if}>
+		</div>
+		<{section name=i loop=$document}>
+			<{if $document[i].doc_id == $did}>
+				<{if $front.doc_id}>
+					<a title="<{$front.doc_name}>" href="opt_check.php?id=<{$front.doc_id}>"><span id="former_pic"></span></a>
+					<a id="former" href="opt_check.php?id=<{$front.doc_id}>"><{$front.doc_name}></a>
+				<{/if}>
+				<{if $later.doc_id}>
+					<a title="<{$later.doc_name}>" href="opt_check.php?id=<{$later.doc_id}>"><span id="later_pic"></span></a>
+					<a id="later" href="opt_check.php?id=<{$later.doc_id}>"><{$later.doc_name}></a>
+				<{/if}>
+			<{/if}>
+		<{/section}>
+		<a title="回月曆" href="index.php"><div id="return_calender"></div></a>
+	</div>
+</div>
+<{$events}>	
+</div>

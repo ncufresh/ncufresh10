@@ -1,0 +1,12 @@
+<p style="font-size:30px">是否要刪除?<br /></p>
+<form action="delete_finish.php?Key=<{$Key}>&num=<{$num}>" method="post">
+<input name="send" value="是" type="submit">
+</form>
+<form action="must.php?num=<{$num}>" method="post">
+<input name="send" value="否" type="submit">
+</form>
+<hr />
+<{section name=i loop=$must_2D}>
+<{$must_2D[i].title}><br/>
+<{$must_2D[i].content}><br/><p/>
+<{/section}>

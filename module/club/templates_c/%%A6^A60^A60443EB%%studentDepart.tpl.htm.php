@@ -1,0 +1,153 @@
+<?php /* Smarty version 2.6.26, created on 2010-08-06 07:33:55
+         compiled from zh_tw/studentDepart.tpl.htm */ ?>
+<div id="main_container_left">
+  <div id="main_container_left_2">
+    <div class="bread_photo">
+	  <a>
+         <img src="templates/zh_tw/images/bread_1.png"/>
+      </a>
+	</div>
+	<div class="bread_link">
+	   <a class="bread_css_1" href="index.php">系所社團</a>
+	   >
+	   <a class="bread_css_2" href="studentDepart.php">系學會</a>
+    </div>
+	<br class="clear" />
+  </div>
+</div>
+
+<div id="main_container_right">
+
+   <div id="club_studentDepart_main_container_right_top">
+      <p class="club_studentDepart">系學會</p>
+   </div> 
+   
+   <br /> 
+   <br />
+   <br />
+   
+   <div id="club_studentDepart_main_container_right_contain">
+
+      <span class="club_studentDepart_main_container_right_contain_1">
+			<img src="templates/zh_tw/images/01.png"> 
+	  </span>
+	  <span class="club_studentDepart_main_container_right_contain_2">
+         ‧<a href="list.php?number=133">中國文學系  </a>
+      </span>
+      <span class="club_studentDepart_main_container_right_contain_2">
+         ‧<a href="list.php?number=144">英美文學系  </a>
+      </span>
+      <span class="club_studentDepart_main_container_right_contain_2">
+         ‧<a href="list.php?number=131">法國文學系  </a>
+      </span>
+      
+	  <br /> 
+	  <br />
+	  <br />
+	  
+      <span class="club_studentDepart_main_container_right_contain_1" >
+			<img src="templates/zh_tw/images/02.png">  
+      </span>
+      <span class="club_studentDepart_main_container_right_contain_2">
+         ‧<a href="list.php?number=138">數學系  </a>
+      </span>
+      <span class="club_studentDepart_main_container_right_contain_2">
+         ‧<a href="list.php?number=141">物理學系  </a>
+      </span>
+      <span class="club_studentDepart_main_container_right_contain_2">
+         ‧<a href="list.php?number=145">化學學系  </a>
+      </span>
+	  
+	  <br />
+
+	  
+      <span class="club_studentDepart_main_container_right_contain_3">
+         ‧<a href="list.php?number=125">生命科學系  </a>
+      </span>
+	  <span class="club_studentDepart_main_container_right_contain_4">
+		 ‧<a href="list.php?number=146">理學院學士班  </a>
+      </span>
+      <span class="club_studentDepart_main_container_right_contain_6">
+         ‧<a href="list.php?number=140">光電科學與工程學系  </a>
+      </span>
+      
+        <br />
+		<br />
+	    <br />
+		
+      <span class="club_studentDepart_main_container_right_contain_1" >
+			<img src="templates/zh_tw/images/03.png">  
+      </span> 
+      <span class="club_studentDepart_main_container_right_contain_2">
+	     ‧<a href="list.php?number=148">機械工程學系  </a>
+      </span>
+      <span class="club_studentDepart_main_container_right_contain_2">
+         ‧<a href="list.php?number=147">土木工程學系  </a>
+      </span>
+      <span class="club_studentDepart_main_container_right_contain_7">
+         ‧<a href="list.php?number=126">化學工程與材料工程學系  </a>
+      </span>
+      
+	  <br />
+	  <br />
+	  <br />
+	  
+      <span class="club_studentDepart_main_container_right_contain_1">
+			<img src="templates/zh_tw/images/04.png"> 
+      </span>
+
+      <span class="club_studentDepart_main_container_right_contain_2">
+         ‧<a href="list.php?number=149">企業管理學系  </a>
+      </span>
+      <span class="club_studentDepart_main_container_right_contain_2">
+         ‧<a href="list.php?number=150">資訊管理學系  </a>
+      </span>
+      <span class="club_studentDepart_main_container_right_contain_2">
+         ‧<a href="list.php?number=135">財務金融學系  </a>
+      </span>
+	  <br />
+	  <span class="club_studentDepart_main_container_right_contain_5">
+         ‧<a href="list.php?number=139">經濟學系  </a>
+      </span>
+      
+	  <br />
+	  <br />
+	  <br />
+	  
+      <span class="club_studentDepart_main_container_right_contain_1">
+			<img src="templates/zh_tw/images/05.png"> 
+      </span>
+   
+      <span class="club_studentDepart_main_container_right_contain_2">
+         ‧<a href="list.php?number=151">電機工程學系  </a>
+      </span>
+      <span class="club_studentDepart_main_container_right_contain_2">
+         ‧<a href="list.php?number=137">資訊工程學系  </a>
+      </span>
+      <span class="club_studentDepart_main_container_right_contain_2">
+         ‧<a href="list.php?number=152">通訊工程學系  </a>
+      </span>
+      
+	  <br />
+	  <br />
+      <br />
+	  
+      <span class="club_studentDepart_main_container_right_contain_1">
+			<img src="templates/zh_tw/images/06.png">  
+      </span>
+
+      <span class="club_studentDepart_main_container_right_contain_2">
+         ‧<a href="list.php?number=127">地球科學學系  </a>
+      </span>
+      <span class="club_studentDepart_main_container_right_contain_2">
+         ‧<a href="list.php?number=153">大氣科學學系  </a>
+      </span>
+      
+   </div>
+   
+   <div id="main_container_right_footer">
+      <a>
+         <img src="templates/zh_tw/images/departmentmenu_bottom.png" width="700" height="90"/>
+      </a>
+   </div>
+</div>

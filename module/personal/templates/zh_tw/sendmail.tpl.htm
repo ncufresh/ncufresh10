@@ -1,0 +1,44 @@
+<script type="text/javascript">
+J(document).ready(function(){
+    setTimeout(function(){
+        J('div#wait').hide('slow');
+    }, 3000);
+});
+</script>
+      <div class="m_up">
+		<{if $much!=0}>	
+		  <a href="unreadmail.php"><img alt="未讀訊息" src="templates/zh_tw/images/mailbox/nnnotreadn.png"/></a>
+	    <div class="in_frog"><{$much}></div>
+          <{else}>
+	        <a href="unreadmail.php"><img alt="未讀訊息" src="templates/zh_tw/images/mailbox/nnnotread.png"/></a>
+	        <{/if}>
+        <a href="haveread.php"><img alt="已讀訊息" src="templates/zh_tw/images/mailbox/nnread.png"/></a>
+        <a href="sendmail.php"><img alt="寄送訊息" src="templates/zh_tw/images/mailbox/send.png"/></a>
+      </div>
+<div class="m_back">
+  <div class="s_area">
+		<!-- leave message --!>
+<{if $all_right==false}><div id="wait"><{$errmsg}></div><{/if}>
+		以下欄位均不可留空<br/>
+		<form action="action.php?action=send" method="post">
+		 <div class="s_text"> 
+			  <div class="s_q">收件人ID：</div>
+			  <div class="s_q">標題：</div>
+			  <div class="s_q_content">內容：</div>		  
+			  <div class="s_q">請輸入驗證碼</div>
+		</div>  
+  <div class="s_right">		
+		<div class="s_form">
+			  <div class="s_form"><input type="text" name="sendtowho" value="<{$post_rec}>"/><br /></div>
+			  <div class="s_form"><input type="text" name="topic" value="<{$post_topic}>"/><br /></div>
+			  <div class="s_form_contnet"><textarea name="content" cols="24" rows="5" class="myTextarea"><{$post_content}></textarea><br /></div>
+			  <div class="s_form"><input type="text" name="num"/><br /></div>
+			  <div class="s_form"><img src="../../core/lib/ac_random_im_generator.php"/></div>
+			  <div class="s_send"><input type="image" border="0" src="templates/zh_tw/images/mailbox/sub.png" value="寄出" />
+			  <input type="reset" class="s_clear" value="" /> 
+              <{if $curruser->username=="NcuFresh10"}><a href="sendtoall.php">全站寄信</a><{/if}></div>
+        </div>
+        </form>
+  </div>
+  </div>
+</div>

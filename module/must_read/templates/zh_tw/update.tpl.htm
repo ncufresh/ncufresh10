@@ -1,0 +1,11 @@
+<{if $currmodule->is_system() == TRUE}>
+<form name="data" action="update_finish.php?Key=<{$Key}>&num=<{$num}>" method="post" onsubmit="procCheck();">
+   <a href="must.php?num=<{$num}>">回上一頁</a><br />
+   原標題:<{$must_1_2D[0].title}><br />
+   新標題:<input name="Ntitle" type="text" /><br />
+   內容
+   <{$editor}>
+  <input type="submit" value="確定修改">
+</form>
+
+<{/if}>

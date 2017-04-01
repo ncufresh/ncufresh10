@@ -1,0 +1,19 @@
+
+<div>
+<p>請回答下列問卷</p>
+
+<table><tbody>
+<tr>
+	<th>問卷標題</th>
+	<th>問卷描述</th>
+	<th>回答</th>
+</tr>
+<{section name=i loop=$form}>
+<tr>
+	<td><{$form[i].title}></td>
+	<td><{$form[i].description}></td>
+	<td class="tool"><a class="go" href="askpage.php?qid=<{$form[i].qid}>">GO</a></td>
+</tr>
+<{/section}>
+</tbody></table>
+</div>

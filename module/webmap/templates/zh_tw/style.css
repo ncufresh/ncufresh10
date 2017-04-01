@@ -1,0 +1,134 @@
+.mapout1
+{
+	background-image:url('images/map_background01_.png');
+	background-repeat:no-repeat;
+	min-height:53px;
+	#min-height:53px;
+	width:700px;
+}
+.mapout
+{
+	background-image:url('images/map_background02_.png');
+	background-repeat:repeat-y;
+	min-height:60px;
+	width:800px;
+}
+.mapout2
+{
+	margin-left:50px;
+	margin-top:25px;
+	#margin-top:25px;
+	min-height:53px;
+	#min-height:53px;
+	width:700px;
+	float:left;
+}
+.mapout3
+{
+	background-image:url('images/map_background03_.png');
+	min-height:150px;
+	width:700px;
+}
+
+.mapfirst
+{
+	margin-left:50px;
+	min-height:60px;
+	width:150px;
+	float:left;
+}
+.mapfirst1
+{
+	min-height:60px;
+	width:150px;
+	float:left;
+}
+.mapsecond
+{
+	min-height:60px;
+	width:300px;
+	float:left;
+}
+.mapthird
+{
+	min-height:60px;
+	width:450px;
+	float:left;
+}
+.mapforth
+{
+	min-height:30px;
+	width:150px;
+	float:left;
+}
+.title
+{
+	font-size:15px;
+	margin-bottom:10px;
+	width:150px;
+}
+.title1
+{
+	font-size:15px;
+	margin-top:8px;
+	margin-bottom:10px;
+	width:150px;
+}
+.title2
+{
+	font-size:15px;
+	margin-bottom:10px;
+	width:300px;
+	min-height:15px;
+}
+.title2_son1
+{
+	font-size:15px;
+	float:left;
+	margin-bottom:10px;
+	width:150px;
+	min-height:15px;
+}
+.title2_son2
+{
+	font-size:15px;
+	float:left;
+	margin-bottom:10px;
+	width:150px;
+	min-height:15px;
+}
+
+.titlebar2
+{
+	min-height:30px;
+	width:300px;
+}
+.titlebar3
+{
+	min-height:30px;
+	width:450px;
+}
+.titleone
+{
+	font-size:15px;
+	margin-top:10px;
+	margin-bottom:10px;
+	width:150px;
+	float:left;	
+}
+.titletwo
+{
+	font-size:15px;
+	margin-top:10px;
+	margin-bottom:10px;
+	width:150px;
+	float:left;
+}
+.titlethree
+{
+	font-size:15px;
+	margin-top:10px;
+	margin-bottom:10px;
+	width:150px;
+	float:left;
+}

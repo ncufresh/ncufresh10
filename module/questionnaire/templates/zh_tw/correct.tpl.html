@@ -1,0 +1,55 @@
+<div class="quesbody">
+	<div class="form_text">
+	<div class="description"><{$description}></div>
+	<div class="title"><{$title}></div>
+	</div>
+
+<{section name=i loop=$questions }>
+<div class="questions">
+<div class="q_text_top"></div>
+<div class="q_text_middle" >
+	<span class="q_num"><{$smarty.section.i.iteration}>.</span>
+	<span class="q_title"><{$questions[i].t_title}></span><br/>
+	<span class="q_desc"><{$questions[i].t_description}></span>	
+</div>
+<div class="q_text_bottom"></div>
+	<{if $questions[i].t_type =="0" }>
+		<div class="q_response res_text">	
+			<label>此題沒有正確答案</label><br/>
+		</div>
+	<{elseif $questions[i].t_type =="1" }>
+		<div class="q_response res_area">	
+			<label>此題沒有正確答案</label><br/>
+		</div>
+	<{elseif $questions[i].t_type =="2" }>
+		<div class="q_response res_radio">	
+			<ul>
+			<{section name=j loop=$questions[i].options }>
+				<li><{if $questions[i].correct[j] =="1"}><img src="templates/zh_tw/images/correct.jpg" class="icon" /><{else}><img src="templates/zh_tw/images/X.png" class="icon" /><{/if}><{$questions[i].options[j]}></li>
+			<{/section}>
+			</ul>
+		</div>	
+	
+	<{elseif $questions[i].t_type =="3" }>
+		<div class="q_response res_check">	
+		
+			<ul>
+			<{section name=j loop=$questions[i].options }>
+				<li><{if $questions[i].correct[j] =="1"}><img src="templates/zh_tw/images/correct.jpg" class="icon" /><{else}><img src="templates/zh_tw/images/X.png" class="icon" /><{/if}><{$questions[i].options[j]}></li>
+			<{/section}>
+			</ul>
+		</div>	
+	<{elseif $questions[i].t_type =="4" }>
+		<div class="q_response res_list">	
+		
+			<ul>
+			<{section name=j loop=$questions[i].options }>
+				<li><{if $questions[i].correct[j] =="1"}><img src="templates/zh_tw/images/correct.jpg" class="icon"/><{else}><img src="templates/zh_tw/images/X.png" class="icon" /><{/if}><{$questions[i].options[j]}></li>
+			<{/section}>
+			</ul>
+		</div>
+	<{/if}>
+</div>
+<{/section}>
+
+</div>
